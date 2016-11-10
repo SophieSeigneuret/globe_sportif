@@ -1,0 +1,179 @@
+/* ---------------------------------------------------------------------------- */
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+
+/* ---------------------------------------------------------------------------- */
+/* ALL PAGE */
+
+body {
+    background-color: #343642;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 80%;
+    max-width: 1200px;
+    min-width: 900px;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+
+
+/* ---------------------------------------------------------------------------- */
+/* FORMULAIRE */
+
+h2 {
+    width: 100%;
+    color: #ffffff;
+    background-color: #343642;
+    margin-bottom: 50px;
+    padding: 20px 50px;
+}
+
+/* formulaire global */
+#form_reservation {
+    width: 80%;
+    max-width: 1200px;
+    min-width: 900px;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+#infos_client, #resa_client {
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto 50px;
+}
+
+#form_reservation fieldset {
+    border-color: #962d3e;
+ }
+
+#form_reservation fieldset legend {
+    color: #962d3e;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    position: relative;
+    bottom: 5px;
+}
+
+
+/* vos informations */
+fieldset#infos_client label {
+    margin-left: 5%;
+    text-align: left;
+    display: inline-block;
+    width: 20%;
+    color: #343642;
+}
+
+fieldset#infos_client input {
+    height: 30px;
+    margin-bottom: 20px;
+    width: 65%;
+}
+
+/* votre réservation */
+fieldset#resa_client label {
+    margin-left: 5%;
+    text-align: left;
+    display: inline-block;
+    width: 30%;
+    color: #343642;
+}
+
+fieldset#resa_client input {
+    height: 30px;
+    margin-bottom: 20px;
+    width: 55%;
+}
+
+.bouton_submit {
+    padding: 10px;
+    width: 200px;
+    color: #962d3e;
+    background-color: #ffffff;
+    font-size: 1.2rem;
+    margin: 0 60px;
+    border-color: #962d3e;
+}
+
+.connexion {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+
+/* ---------------------------------------------------------------------------- */
+/* TABLEAU RECAPITULATIF */
+
+
+/* tableau entier */
+#recap {
+    width: 80%;
+    border-spacing: 5px;
+    margin: 50px auto;
+}
+
+/* titre "Récapitulatif" */
+caption {
+    /*font-size: 1.3rem;*/
+    margin: 0 0 10px 15px;
+    color: #343642;
+    text-align: center;
+}
+
+/* les lignes th et td */
+#recap th, #recap td {
+    padding: 10px;
+}
+
+/* ligne entête */
+#recap thead {
+    background-color: #343642;
+    color: #ffffff;
+}
+
+/* 1ère colonne */
+#recap thead th:first-of-type {
+     width: 65%;
+ }
+
+/* 2ème colonne */
+#recap thead th:nth-of-type(2) {
+    width: 10%;
+}
+
+/* cellules quantité du tbody*/
+#recap tbody tr:nth-of-type(1) td:nth-of-type(2), #recap tbody tr:nth-of-type(2) td:nth-of-type(2) {
+    text-align: center;
+}
+
+/* 3ème colonne */
+#recap tbody tr td:last-of-type {
+    text-align: right;
+    padding-right: 5%;
+}
+
+/* dernière ligne */
+#recap tbody tr:last-of-type {
+    background-color: #962d3e;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+

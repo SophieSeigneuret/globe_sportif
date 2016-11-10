@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Globe Sportif</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+<div id="form_reservation">
+    <h2>Réservation</h2>
+    <form action="">
+        <fieldset id="infos_client">
+            <legend>Vos informations</legend>
+
+            <label for="nom">NOM</label>
+            <input type="text" name="nom" id="nom" value="" required="required"/>
+
+            <label for="prenom">PRENOM</label>
+            <input type="text" name="prenom" id="prenom" value="" required="required"/>
+
+            <label for="mail">COURRIEL</label>
+            <input type="email" name="mail" id="mail" value=""/>
+
+            <label for="phone">TÉLÉPHONE</label>
+            <input type="tel" name="phone" id="phone" value="" placeholder="(XXX) XXX-XX-XX"/>
+
+            <label for="adresse">ADRESSE</label>
+            <input type="text" name="adresse" id="adresse" value=""/>
+
+            <label for="code_postal">CODE POSTAL</label>
+            <input type="text" name="cp" id="code_postal" value=""/>
+
+            <label for="ville">VILLE</label>
+            <input type="text" name="ville" id="ville" value=""/>
+        </fieldset>
+
+        <fieldset id="resa_client">
+            <legend>Votre réservation</legend>
+
+            <label for="date_debut">Date de début du forfait</label>
+            <input type="date" name="date_debut" id="date_debut" value=""/>
+
+            <label for="nb_participants">Nombre de participants</label>
+            <input type="number" name="nb_participants" id="nb_participants" value="1" min="1"/>
+
+            <label for="nb_animaux">Nombre d'animaux</label>
+            <input type="number" name="nb_animaux" id="nb_animaux" value="0" min="0" max="2"/>
+        </fieldset>
+
+        <table id="recap">
+            <caption>RÉSUMÉ</caption>
+            <thead>
+            <tr>
+                <th>Options</th>
+                <th>Quantité</th>
+                <th>Prix unitaire</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Forfait</td>
+                <td>2</td>
+                <td>1550 $</td>
+            </tr>
+            <tr>
+                <td>Animal de compagnie</td>
+                <td>1</td>
+                <td>85 $</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>3640 $</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div class="connexion">
+            <input type="submit" value="Réserver" id="reserver" class="bouton_submit"/>
+            <input type="submit" value="Annuler" id="annuler" class="bouton_submit"/>
+        </div>
+    </form>
+</div>
+<script src="script/main.js"></script>
+</body>
+</html>
