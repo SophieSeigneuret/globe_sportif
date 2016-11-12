@@ -36,7 +36,7 @@ body {
 /* ---------------------------------------------------------------------------- */
 /* FORMULAIRE */
 
-h2 {
+#form_reservation h2 {
     width: 100%;
     color: #ffffff;
     background-color: #343642;
@@ -177,4 +177,138 @@ caption {
     font-size: 1.2rem;
     font-style: italic;
 }
+
+
+
+
+/* ---------------------------------------------------------------------------- */
+/* DETAIL - LIGHTBOX */
+
+
+.lightbox {
+    display: none;
+    z-index: 999;
+    width: 800px;
+    height: 100%;
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+.lightbox:target {
+    display: block;
+}
+
+#lien_provisoire {
+    color: #ffffff;
+}
+
+.info_forfait {
+    margin-bottom: 30px;
+}
+
+/* image forfait */
+.image_forfait {
+    display: inline-block;
+    margin: 0 30px;
+    width: 50%;
+    min-width: 25%;
+}
+
+.descriptif {
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+/* titre catégorie */
+#detail_forfait_1 h2 {
+    color: #ffffff;
+    background-color: #343642;
+    margin-bottom: 30px;
+    padding: 20px 30px;
+}
+
+/* titre forfait */
+#detail_forfait_1 h3 {
+    margin-bottom: 10px;
+}
+
+/* prix */
+.descriptif h4 {
+    margin: 10px 0;
+    color: #962d3e;
+}
+
+/* boutons */
+#bouton_resa {
+    background-color: #962d3e;
+    padding: 10px;
+    border: none;
+    color: #ffffff;
+    margin: 15px 0 0;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#bouton_resa:hover {
+     color: #f2ebc7;
+ }
+
+#bouton_retour {
+    display: block;
+    margin-top: 20px;
+    color: #343642;
+    text-decoration: none;
+}
+
+#bouton_retour:hover {
+    color: #348899;
+}
+
+
+/* ONGLETS */
+
+#onglets {
+    padding: 0 30px 30px;
+}
+
+#onglets ul li {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #343642;
+    background-color: #343642;
+    text-decoration: none;
+    border-radius: 5px 5px 0 0;
+}
+
+#onglets ul li:hover {
+    background-color: #348899;
+}
+
+#onglets ul li:active {
+    background-color: #962d3e;
+}
+
+#onglets ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#onglets div {
+    border: 1px solid #343642;
+    border-radius: 0 0 5px 5px;
+    padding: 10px;
+    position: relative;
+    bottom: 1px;
+}
+
+#onglets div h5 {
+    margin-bottom: 5px;
+    color: #962d3e;
+    font-size: 1rem;
+}
+
 
