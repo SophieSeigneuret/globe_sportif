@@ -1,5 +1,10 @@
-/* ---------------------------------------------------------------------------- */
-/* RESET */
+/*color
+#952C3F rouge
+#343641 blue fonce
+#979C9C gris
+#F2EAC9 jaune clair
+#388998 bleu
+*/
 
 * {
     margin: 0;
@@ -18,17 +23,47 @@ body {
     font-size: 16px;
 }
 
-
-
-/* ---------------------------------------------------------------------------- */
-/* FORMULAIRE */
-
-#form_reservation h2 {
+/*------------------------------   Container (centre la page)    ---------------------*/
+.container {
+    max-width: 1170px;
+    margin:0 auto;
+    min-height: inherit;
+}
+/*-------------------------------------------   Header   -------------------------------------*/
+header {
+    background-color: #348899 ;
+    min-height: 130px;
     width: 100%;
     color: #ffffff;
-    background-color: #348899;
     margin-bottom: 50px;
-    padding: 20px 50px;
+    padding: 20px 50px; margin-top: 0;
+}
+header img { /*logo*/
+    display: inline-block;
+    width: 30%;
+    float:left;
+    padding: 40px  0 20px  0;
+    vertical-align: top;
+}
+/*menu principal contact anglais*/
+header ul{
+    padding-top: 50px;
+    float: right;
+}
+header ul li {
+    display: inline-block;
+    font-weight: 200;
+    font-size: 1rem;
+    border-right: 1px solid #FFFFFF;
+}
+header ul li a{
+    display : block;
+    text-decoration: none;
+    color: #fff;
+    padding : 5px 15px 5px 15px ;
+}
+header ul li a:hover{
+    color: #a1f7f9;
 }
 
 /* formulaire global */
