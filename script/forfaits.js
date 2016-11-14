@@ -7,7 +7,7 @@ var forfaits = [
         nom: "Tibau Do Sul (Brésil)",
         categorie: "Destination Surf",
         lieu: "<ul><li>Une côte exposée aux grandes houles de l’Atlantique. Nous sommes au \"paradis des surfeurs\". Grâce à sa position géographique, le littoral de Rio Grande do Norte reçoit des alizés constants de sud-est.</li></ul>",
-        infos : "<ul><li>Sossego Surf Camp</li><li>Rua governador Aluizos Alves n°152</li><li>Tibau Do Sul – Brasil</li><li>Tél. mobile : 00 55 84 99 53 22 81</li><li>Courriel : <a href='mailto:tibaudosul@ucpaplnate.com'>tibaudosul@ucpaplnate.com</a></li><br/><li>Aéroport de Natal (transfert en bus de 1h30 à 2h)</li></ul>",
+        infos : "<ul><li>Sossego Surf Camp</li><li>Rua governador Aluizos Alves n°152</li><li>Tibau Do Sul – Brasil</li><li>Tél. mobile : 00 55 84 99 53 22 81</li><li>Courriel : <a href='mailto:info@globe-sportif.com'>info@globe-sportif.com</a></li><br/><li>Aéroport de Natal (transfert en bus de 1h30 à 2h)</li></ul>",
         hebergement : "<ul><li>Confort : Auberge</li><li>- Hostel Sossego Surf Camp (pension locale) : 60 lits.</li><li>- Chambres de 3 ou 4 personnes, équipées de ventilateurs et sanitaires.</li><li>- Bungalows spacieux de 2 personnes (avec supplément).</li><li>- Piscine avec vue sur la mer.</li><li>- Pension complète.</li><br/><li>Animations : découverte, kitesurf, surf, canoë, VTC, balade à cheval, massages, excursions.</li><li>Au village : de nombreux petits bars tropicaux \"ambiance brésilienne\"…</li></ul>",
         niveau : "<ul><li>Quel que soit votre niveau, il y a un spot adapté : \"Point Break\", \"Reef Break\", \"Beach Break\", de belles sessions en perspective…</li><br/><li>Nombre de séances : 5 demi-journées.</li><li>Niveau technique : Ouvert à tous.</li><li>Intensité physique : *</li><br/><li>L’intensité du programme est accessible au plus grand nombre. Le rythme est facile à suivre. Même si vous ne faites pas de sport régulièrement, votre motivation suffira.</li></ul>",
         duree: 14,
@@ -17,7 +17,7 @@ var forfaits = [
         places_dispo: 22,
         nbr_max_animaux_admis: 1,
         prix_animal: 99,
-        photo: "images/images-modal/aventure_01.jpg",
+        photo: "<img src='images/surf_tibau_do_sul.jpg' alt='photo surf Tibau do Sul' id='image_forfait'/>",
         photo_cat: "images/categorie/nature.jpg"
     },
     {
@@ -25,7 +25,7 @@ var forfaits = [
         nom: "Le Vauclin (Martinique)",
         categorie: "Destination Surf",
         lieu: "<ul><li>Du site de Tartane, avec sa presqu’île exposée à la houle de l’Atlantique, aux plages du Sud entre Trabaud et le Diamand, la Martinique propose un grand nombre de spots pour les surfeurs de tous niveaux.</li><li>Le Surf Safari vous propose de partir tous les jours en minibus sur le spot le plus adapté aux conditions et à votre niveau pour surfer au bon endroit au bon moment… Une belle occasion de découvrir la Martinique, sa nature sauvage et inconnue du grand public.</li><br/><li>Cet immense lagon peu profond offre des zones de navigation pour chaque pratique. Vague de récif par longue houle de Nord-Est.</li></ul>",
-        infos : "<ul><li>Château Paille</li><li>97280 Le Vauclin - Martinique</li><li>Tél. : 0 596 74 33 68 - Base nautique : 0 596 74 21 90 - Fax : 0 596 74 21 12 </li><br/><li>Courriel : <a href='mailto:ucpavauclin@ucpa.asso.fr'>ucpavauclin@ucpa.asso.fr</a></li></ul>",
+        infos : "<ul><li>Château Paille</li><li>97280 Le Vauclin - Martinique</li><li>Tél. : 0 596 74 33 68 - Base nautique : 0 596 74 21 90 - Fax : 0 596 74 21 12 </li><br/><li>Courriel : <a href='mailto:info@globe-sportif.com'>info@globe-sportif.com</a></li></ul>",
         hebergement : "<ul><li>120 lits.</li><li>Chambres de 2 ou 3 personnes (chambres à 2 avec supplément) avec sanitaires et loggias.</li><li>Restauration : pension complète.</li><br/><li>Animations</li><li>Ping-pong, beach-volley, pétanque, baby-foot, vélos à disposition, excursions, windsurf, beach-kayak, wakeboard, catamaran.</li><br/><li>Au village</li><li>Commerces, location de voitures, marché, restaurants... Plus loin, plages de sable blanc du sud et forêt tropicale.</li></ul>",
         niveau : "<ul><li>Niveau technique :</li><li>Ouvert à tous</li><br/><li>Intensité physique : **</li><li>L’intensité du programme est un peu soutenue et une bonne forme physique est nécessaire.</li><li>Savoir nager est obligatoire.</li></ul>",
         duree: 18,
@@ -35,7 +35,7 @@ var forfaits = [
         places_dispo: 17,
         nbr_max_animaux_admis: 1,
         prix_animal: 156,
-        photo: "images/images-modal/Banff_Parke.jpg",
+        photo: "<img src='images/surf_vauclin.jpg' alt='photo surf Le Vauclin' id='image_forfait'/>",
         photo_cat: "images/categorie/croisiere_01.jpg"
     },
     {
@@ -43,7 +43,7 @@ var forfaits = [
         nom: "Fuerteventura (Canaries)",
         categorie: "Destination Surf",
         lieu: "<ul><li>Vent dominant Nord/Nord-est constant, régime de houle bien établit.</li><li>Régularité et consistance des vagues lisses et tubulaires, quelles que soient leur taille, garantissent un large choix de \"spots\" pour tous les niveaux.</li><li>Matériel Gamme complète de planches, d’ailes et de voiles les plus récentes.</li></ul>",
-        infos : "<ul><li>Hotel Royal Suite</li><li>35 627 Costa Calma</li><li>Fuerteventura</li><br/><li>Courriel : <a href='mailto:hdanis@ucpaplanete.com'>hdanis@ucpaplanete.com</a></li></ul>",
+        infos : "<ul><li>Hotel Royal Suite</li><li>35 627 Costa Calma</li><li>Fuerteventura</li><br/><li>Courriel : <a href='mailto:info@globe-sportif.com'>info@globe-sportif.com</a></li></ul>",
         hebergement : "<ul><li>Confort : Hôtel 4 étoiles</li><li>Hôtel Drago Park (500 lits dont 50 UCPA) avec piscine</li><li>Chambre pour 2 à 3 personnes avec salle de bain</li><li>Pension Complète</li><br/><li>Animations</li><li>Surf, bodyboard, windsurf, kayak, plongée, V.T.T., excursions, tennis, golf, équitation.</li><li>À Costa Calma : boutiques, restaurants, bars et night-clubs.</li></ul>",
         niveau : "<ul><li>Nombre de séances :</li><li>5 sessions de 4 heures pour profiter des meilleures conditions qui sont à marée basse.</li><br/><li>Niveau technique : Ouvert à tous</li><br/><li>Intensité physique : **</li><li>L’intensité du programme est accessible au plus grand nombre. Le rythme est facile à suivre. Même si vous ne faites pas de sport régulièrement, votre motivation suffira.</li></ul>",
         duree: 16,
@@ -53,17 +53,17 @@ var forfaits = [
         places_dispo: 14,
         nbr_max_animaux_admis: 2,
         prix_animal: 90,
-        photo: "images/images-modal/iceberg_02.jpg",
+        photo: "<img src='images/surf_fuerteventura.jpg' alt='photo surf Fuerteventura' id='image_forfait'/>",
         photo_cat: "images/categorie/croisiere_02.jpg"
     },
     {
         id: "forfait_4",
         nom: "Les Saintes (Guadeloupe)",
         categorie: "Espaces sous-marins",
-        lieu: "<ul><li>Un séjour idéal pour découvrir l’archipel des Saintes en douceur.</li><li>En kayak, vous explorez les criques cachées de l’archipel : Plage de sable blanc, baignades, observations sous-marines (masque, tuba) </li><li>et pause sous les cocotiers.</li><li>Une demi-journée réservée à l’initiation et à la pratique du stand up paddle.</li><li>Un programme mi-temps pour un bon équilibre entre activité sportive et détente.</li><br/><li>Grande baie protégée bercée par l’Alizé.</li><li>Catamaran, windsurf et kitesurf disponibles sur de larges zones de pratiques.</li><li>Kayak de mer, stand up paddle et plongée permettent d’explorer les petites criques et de découvrir les fonds marins.</li></ul>",
-        infos : "<ul><li>Baie Marigot</li><li>97137 Terre de Haut - Guadeloupe</li><li>Tél. : 05 90 99 54 94</li><br/><li>Courriel : <a href='mailto:saintes@ucpa.asso.fr'>saintes@ucpa.asso.fr</a></li></ul>",
-        hebergement : "<ul><li>Bungalows UCPA : 150 lits.</li><li>Chambres de 2 ou 3 personnes (chambres à 2 avec supplément) avec balcon ou terrasse et sanitaires particuliers.<li>En pension complète.</li><br/><li>Animations</li><li>Masque et tuba (avec caution).</li><li>Windsurf, kayak de mer, catamaran, kitesurf, stand up paddle, journée en Guadeloupe, baptême de plongée.</li><li>Au village de Terre-de-Haut </li><li>Tous commerces, restaurants, bars, location de vélos et scooters pour visiter l’île...</li></ul>",
-        niveau : "<ul><li>Nombre de séances :</li><li>5 demi-journées encadrées durant la semaine forfait activité (8 jours / 7 nuits) + 3 jours / 3 nuits en séjour libre (du vendredi au dimanche en début de séjour ou du lundi au mercredi en fin de séjour selon votre jour de départ). </li><br/><li>Niveau technique : Ouvert à tous </li><br/><li>Intensité physique : * </li><li>L’intensité du programme est accessible au plus grand nombre. Le rythme est facile à suivre. Même si vous ne faites pas de sport </li><li>régulièrement, votre motivation suffira.</li><li>Etre capable de nager 50 m est obligatoire.</li></ul>",
+        lieu: "<ul><li>Un séjour idéal pour découvrir l’archipel des Saintes en douceur.</li><li>En kayak, vous explorez les criques cachées de l’archipel : Plage de sable blanc, baignades, observations sous-marines (masque, tuba) et pause sous les cocotiers.</li><li>Une demi-journée réservée à l’initiation et à la pratique du stand up paddle.</li><li>Un programme mi-temps pour un bon équilibre entre activité sportive et détente.</li><br/><li>Grande baie protégée bercée par l’Alizé.</li><li>Catamaran, windsurf et kitesurf disponibles sur de larges zones de pratiques.</li><li>Kayak de mer, stand up paddle et plongée permettent d’explorer les petites criques et de découvrir les fonds marins.</li></ul>",
+        infos : "<ul><li>Baie Marigot</li><li>97137 Terre de Haut - Guadeloupe</li><li>Tél. : 05 90 99 54 94</li><br/><li>Courriel : <a href='mailto:info@globe-sportif.com'>info@globe-sportif.com</a></li></ul>",
+        hebergement : "<ul><li>Bungalows UCPA : 150 lits.</li><li>Chambres de 2 ou 3 personnes (chambres à 2 avec supplément) avec balcon ou terrasse et sanitaires particuliers.<li>En pension complète.</li><br/><li>Animations</li><li>Masque et tuba (avec caution), windsurf, kayak de mer, catamaran, kitesurf, stand up paddle, journée en Guadeloupe, baptême de plongée.</li><li>Au village de Terre-de-Haut </li><li>Tous commerces, restaurants, bars, location de vélos et scooters pour visiter l’île...</li></ul>",
+        niveau : "<ul><li>Nombre de séances :</li><li>5 demi-journées encadrées durant la semaine forfait activité (8 jours / 7 nuits) + 3 jours / 3 nuits en séjour libre (du vendredi au dimanche en début de séjour ou du lundi au mercredi en fin de séjour selon votre jour de départ). </li><br/><li>Niveau technique : Ouvert à tous </li><br/><li>Intensité physique : * </li><li>L’intensité du programme est accessible au plus grand nombre. Le rythme est facile à suivre. Même si vous ne faites pas de sport régulièrement, votre motivation suffira.</li><li>Etre capable de nager 50 m est obligatoire.</li></ul>",
         duree: 12,
         debut_saison: "2016-05-01",
         fin_saison: "2016-11-30",
@@ -71,7 +71,7 @@ var forfaits = [
         places_dispo: 5,
         nbr_max_animaux_admis: 0,
         prix_animal: 0,
-        photo: "images/images-modal/ours_01.jpg",
+        photo: "<img src='images/plongee_les_saintes.jpg' alt='photo plongée Les Saintes' id='image_forfait'/>",
         photo_cat: "images/categorie/ours_02.jpg"
     },
     {
@@ -79,7 +79,7 @@ var forfaits = [
         nom: "El Gouna (Egypte)",
         categorie: "Espaces sous-marins",
         lieu: "<ul><li>La plongée libre ou plongée en apnée vous permet de découvrir les fonds marins sans la lourdeur du matériel (bloc à air) avec des immersions de quelques minutes en harmonie avec le monde sous marin. Cette approche sportive de la plongée avec l’écoute de son corps sera prise en compte par votre moniteur. </li><li>Tout en progressivité vous apprendrez différentes techniques de respiration, de relaxation, de déplacement sous l’eau et de maitrise de soi. </li><li>Chacun à son rythme, chaque jour vous partez en bateau pour la journée, et alternez plongée et vie bord du bateau. </li><li>Au cœur d’un aquarium géant vous découvrirez les récifs coralliens et poissons multicolores de la Mer Rouge.</li><br/> <li>Sous l’eau, c’est la symphonie des couleurs… Récifs de coraux qui comptent plus de 9500 espèces de poissons… Plongée à la journée sur les nombreux sites : Fanadir: 2 plateaux l’un à 12 mètres, l’autre à 80 mètres, ou l’on évolue dans la zone des 20 mètres avec la sensation d’être dans le grand bleu.</li></ul>",
-        infos : "<ul><li>Arena Inn Hotel </li><li>El Gouna - Red Sea - Egypte</li> <br/><li>Courriel : <a href='mailto:elgouna@ucpaplanete.com'>elgouna@ucpaplanete.com</a></li></ul>",
+        infos : "<ul><li>Arena Inn Hotel </li><li>El Gouna - Red Sea - Egypte</li> <br/><li>Courriel : <a href='mailto:info@globe-sportif.com'>info@globe-sportif.com</a></li></ul>",
         hebergement : "<ul><li>Confort : Hôtel 3 étoiles normes locales </li><li>Hôtel “Arena inn” 180 lits dont 50 UCPA. </li><li>Chambres de 2 personnes, terrasse, piscine. </li><li>Pension Complète</li><br/><li>Animations </li><li>Excursion plongée, wake, sup, escapade dans le désert.</li></ul>",
         niveau : "<ul><li>Nombre de séances : 5 Jours d’activité.</li><br/><li>Niveau technique : Ouvert à tous </li><br/><li>Intensité physique : * </li><li>L’intensité du programme est accessible au plus grand nombre. Le rythme est facile à suivre. Même si vous ne faites pas de sport régulièrement, votre motivation suffira.</li></ul>",
         duree: 7,
@@ -89,7 +89,7 @@ var forfaits = [
         places_dispo: 6,
         nbr_max_animaux_admis: 0,
         prix_animal: 0,
-        photo: "images/images-modal/escalade_Husky.jpg",
+        photo: "<img src='images/plongee_el_gouna.jpg' alt='photo plongée El Gouna' id='image_forfait'/>",
         photo_cat: "images/categorie/tente.jpg"
     },
     {
@@ -107,7 +107,7 @@ var forfaits = [
         places_dispo: 10,
         nbr_max_animaux_admis: 0,
         prix_animal: 0,
-        photo: "images/images-modal/ski.jpg",
+        photo: "<img src='images/plongee_andaman.jpg' alt='photo plongée Mer d'Andaman id='image_forfait'/>",
         photo_cat: "images/categorie/station_ski.jpg"
     },
     {
@@ -115,7 +115,7 @@ var forfaits = [
         nom: "Ski freerando Val d'Isère (France)",
         categorie: "Snow attitude",
         lieu: "<ul><li>Venez glisser sur un des domaines les plus prestigieux au monde bordé par la frontière italienne et le parc national de la Vanoise: l’espace Killy formé par les stations de Val d’Isère et de Tignes. Laissez-vous surprendre par le charme d’un village typique de Haute-Tarentaise et d’une station vivante pour des vacances pas comme les autres !</li><br/><li>152 Pistes : 1550 m / 3456 m</li><li>Domaine skiable commun à Val d’Isère et à Tignes : un terrain de jeu de 10 000 ha accessible à tous.</li><li>300 km de pistes, 2 glaciers, 79 remontées mécaniques, 2 snowparks, 900 canons à neige, un des plus beaux domaines hors-piste, une zone d’entrainement DVA, espace \"nature ride\" : pistes noires balisées, sécurisées et non damées.</li><li></li><li></li></ul>",
-        infos : "<ul><li>Rue Nicolas Bazile</li><li>73151 Val d’Isère Cedex</li><li>Tél. : 04 79 06 03 80 - Fax : 04 79 06 11 82</li><br/><li>Courriel : <a href='mailto:valdisere@ucpa.asso.fr'>valdisere@ucpa.asso.fr</a></li><li></li><li></li></ul>",
+        infos : "<ul><li>Rue Nicolas Bazile</li><li>73151 Val d’Isère Cedex</li><li>Tél. : 04 79 06 03 80 - Fax : 04 79 06 11 82</li><br/><li>Courriel : <a href='mailto:info@globe-sportif.com'>info@globe-sportif.com</a></li></ul>",
         hebergement : "<ul><li>240 lits répartis en chambres de 4 à 8 personnes avec lavabo.</li><li>Possibilité de réserver un hébergement à deux (chambre twin avec un lit superposé) en contactant directement le centre.</li><li>Chaque module de chambres dispose de douches et sanitaires communs.</li><li>Restaurant, bar, discothèque…</li><br/><li>Animations</li>Découvrez nos après sports proposés par l’équipe de moniteurs pour prolonger votre journée d’activité (balade en raquettes, snowskate, stretching, topo neige et avalanches, jeux apéro…).<li><br/></li>Dans la station<li></li>Tous services et commerces, bars, discothèques, restaurants, Piscine, espaces wellness, médiathèque, musée de Val,…<li></li><li>De nombreuses animations sportives et culturelles sont proposées durant toute la saison par la station : Coupe du monde ski alpin avec le critérium de la première neige, festival du film d’aventure, festival musique classique avec la ClassicaVal,…</li></ul>",
         niveau : "<ul><li>Niveau technique :</li><li>De niveau \"Expert\" vous avez déjà une bonne expérience en hors-piste et vous souhaitez une pratique intensive pour réaliser des sorties de plus grandes envergures. Encadré par un moniteur diplômé, vous affinerez votre lecture du terrain et perfectionnerez votre technique pour être à l’aise dans toutes les neiges et toutes les pentes tant à la montée qu’à la descente.</li><br/><li>Intensité physique : **</li></ul>",
         duree: 9,
@@ -125,7 +125,7 @@ var forfaits = [
         places_dispo: 14,
         nbr_max_animaux_admis: 0,
         prix_animal: 0,
-        photo: "images/images-modal/station_ski.jpg",
+        photo: "<img src='images/snow_freerando.jpg' alt='photo snow Freerando' id='image_forfait'/>",
         photo_cat: "images/categorie/ski.jpg"
     },
     {
@@ -133,7 +133,7 @@ var forfaits = [
         nom: "Hors piste Chamonix (France)",
         categorie: "Snow attitude",
         lieu: "<ul><li>Loin des grands domaines ski au pied, Chamonix est composé de plusieurs domaines skiables, reliés entre eux par bus ou train.</li><br/><li>Votre forfait donne accès à tous les domaines : la Flégère / le Brévent, Le Tour / Vallorcine, Lognan / les Grands Montets (accessible à pied depuis le centre), l’Aiguille du Midi, le train du Montenvers et plusieurs petits domaines de bas de vallée. </li></ul>",
-        infos : "<ul><li>Adresse</li><li>170 rue Charlet Straton – Argentière</li><li>74400 Chamonix</li><li>Tél. : 04 50 54 07 11</li><br/><li>Courriel : <a href='mailto:argentiere@ucpa.asso.fr'>argentiere@ucpa.asso.fr</a></li></ul>",
+        infos : "<ul><li>Adresse</li><li>170 rue Charlet Straton – Argentière</li><li>74400 Chamonix</li><li>Tél. : 04 50 54 07 11</li><br/><li>Courriel : <a href='mailto:info@globe-sportif.com'>info@globe-sportif.com</a></li></ul>",
         hebergement : "<ul><li>300 places.</li><li>Chambres de 4 personnes, quelques chambres de 5 et 6 personnes, sanitaires communs à chaque étage.</li><li>Repas de midi organisé sous forme de pique-nique pour profiter au mieux du domaine skiable (pensez à prendre un petit sac à dos et une bouteille d’eau). Possibilité sur inscription la veille de manger chaud sur centre tous les jours si vous le désirez. C’est un repas simple, et dans tous les cas, le repas chaud à midi n’est pas compatible avec certains programmes ou certains domaines de ski.</li><br/><li>Animations</li><li>Ambiance \"pub\" au bar (films de glisse, musique), concerts avec groupes \"live\" ou vidéo grand écran, soirées danse, animations montagne, stretching, billard, BD, jeux, diverses animations sportives extérieures dans une bonne ambiance \"montagne\".</li><li>Sauna : pensez à prendre maillot de bain et serviette de bain</li><li>Salle d’escalade (type salle de bloc) : pensez à prendre vos chaussons d’escalade.</li></ul>",
         niveau : "<ul><li>Niveau technique</li><li>De niveau \"Confirmé\" ou \"Expert\" vous avez déjà fait un stage découverte ou vous avez une expérience en hors-piste. Ce stage de niveau Hors-piste 2 vous permettra d’être à l'aise en toutes neiges, de réaliser des sorties encadrées par un moniteur diplômé ou un guide dans un groupe constitué de 9 participants au maximum et de maîtriser le maniement de différents D.V.A. et la démarche de l’activité hors-piste. </li><br/><li>Intensité physique : **</li><br/><li>Important</li><li>Pour des raisons de sécurité, de cohérence technique et pédagogique, et pour vous procurer le plus grand plaisir dans cette activité, nous nous attachons à créer des groupes homogènes. Alors assurez-vous bien que vous possédez bien les niveaux évoqués ci dessus car, si nous ne sommes pas en mesure de vous proposer un programme de remplacement, nous ne pourrons pas vous rembourser le prix du stage. Ne vous surestimez pas !</li></ul>",
         duree: 7,
@@ -143,14 +143,14 @@ var forfaits = [
         places_dispo: 24,
         nbr_max_animaux_admis: 1,
         prix_animal: 105,
-        photo: "images/images-modal/aventure_01.jpg",
+        photo: "<img src='images/snow_hors_piste.jpg' alt='photo snow hors piste' id='image_forfait'/>",
         photo_cat: "images/categorie/lac_louise.jpg"
     },
     {
         id: "forfait_9",
         nom: "Chien de traineau Vanoise (France)",
         categorie: "Snow attitude",
-        lieu: "<ul><li>Au cœur du parc national de la Vanoise et du Beaufortain, dans un espace préservé immense, ce séjour est une invitation à découvrir une région authentique par le biais d’activités originales et variées. L'expérience avec les chiens de traîneau, la pratique de la randonnée en raquettes, la nuit sur les hauts plateaux de la vallée de Nave dans un refuge flambant neuf sont des loisirs qui sauront vous ravir. Ce programme se compose de sorties en étoile et d'un raid sur deux jours : raquettes dans le parc national de la Vanoise, à Courchevel, mini raid de 2 jours dans le Beaufortain avec sortie insolite au coucher du soleil. Ballade et initiation à la conduite de chiens de traineaux dans les secteurs de la Plagne et de Champagny. Nous nous déplacerons en minibus pour découvrir toutes ces activités. Des gites et refuge de qualité ainsi que des repas traditionnels savoyards agrémenterons vos vacances.</li></ul>",
+        lieu: "<ul><li>Au cœur du parc national de la Vanoise et du Beaufortain, dans un espace préservé immense, ce séjour est une invitation à découvrir une région authentique par le biais d’activités originales et variées. </li><li>L'expérience avec les chiens de traîneau, la pratique de la randonnée en raquettes, la nuit sur les hauts plateaux de la vallée de Nave dans un refuge flambant neuf sont des loisirs qui sauront vous ravir. </li></ul>",
         infos : "<ul><li>Vous venez en train</li><li>TGV jusqu’à Moutiers.</li><li>Bus depuis la gare routière de Moutiers pour Champagny</li><br/><li> Vous venez en voiture</li><li>Autoroute A430 sortie Albertville puis N 90 sortie Moutiers puis D915 sortie Bozel et D91 b jusqu'à Champagny le Haut.</li></ul>",
         hebergement : "<ul><li>Dortoirs, divisés en cabines de 4 couchettes individuelles superposées équipées de couettes (il est conseillé d’apporter un drap-sac personnel – ou \"sac à viande\" en langage poétique).</li><li>Les sanitaires sont collectifs : lavabos, douches (linge de toilette non fourni).</li><li>Les petits-déjeuners et les repas du soir sont servis chauds dans les hébergements.</li><li>Les pique-niques sont consommés froids sur le terrain.</li></ul>",
         niveau : "<ul><li>Niveau technique : Débutant</li><li>Programme accessible à tous, aucune difficulté technique.</li><li>Intensité physique : **</li><li>Vous pratiquez un peu de jogging, de vélo ou tout autre sport.</li><li>Affaires personnelles pour 1 journée et pique nique (+ affaires de la nuit pendant 2 jours).</li></ul>",
@@ -161,7 +161,7 @@ var forfaits = [
         places_dispo: 3,
         nbr_max_animaux_admis: 2,
         prix_animal: 100,
-        photo: "images/images-modal/pingouins.jpg",
+        photo: "<img src='images/snow_chien_traineau.jpg' alt='photo snow Chiens de traineau' id='image_forfait'/>",
         photo_cat: "images/categorie/lac_moraine.jpg"
     },
     {
@@ -179,7 +179,7 @@ var forfaits = [
         places_dispo: 4,
         nbr_max_animaux_admis: 1,
         prix_animal: 90,
-        photo: "images/images-modal/chiens_traineau.jpg",
+        photo: "<img src='images/rando_patagonie.jpg' alt='photo randonnée Patagonie' id='image_forfait'/>",
         photo_cat: "images/categorie/Caribou.jpg"
     },
     {
@@ -197,7 +197,7 @@ var forfaits = [
         places_dispo: 7,
         nbr_max_animaux_admis: 2,
         prix_animal: 80,
-        photo: "images/images-modal/nature.jpg",
+        photo: "<img src='images/rando_maroc.jpg' alt='photo randonnée Maroc' id='image_forfait'/>",
         photo_cat: "images/categorie/aventure_01.jpg"
     },
     {
@@ -215,7 +215,7 @@ var forfaits = [
         places_dispo: 8,
         nbr_max_animaux_admis: 0,
         prix_animal: 0,
-        photo: "images/images-modal/iceberg_01.jpg",
+        photo: "<img src='images/rando_pyramides_mayas.jpg' alt='photo randonnée pyramides Mayas' id='image_forfait'/>",
         photo_cat: "images/categorie/iceberg_02.jpg"
     }
 ];

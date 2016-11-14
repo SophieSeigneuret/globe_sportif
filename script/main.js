@@ -10,9 +10,11 @@ $( function() {
 
 
 // AJOUT DESCRIPTIF PAGE DETAIL
-var forfait_voulu = rechercher_descriptif_forfait("forfait_8");
+var forfait_voulu = rechercher_descriptif_forfait("forfait_1");
+// photo forfait
+document.querySelector("#informations_forfait div:first-of-type").innerHTML = forfait_voulu.photo;
 // nom categorie
-document.querySelector("#info_forfait h2").textContent = forfait_voulu.categorie.toUpperCase();
+document.querySelector("#informations_forfait h2").textContent = forfait_voulu.categorie.toUpperCase();
 // nom forfait
 document.querySelector("#descriptif h3").innerHTML = forfait_voulu.nom;
 // date de début de saison

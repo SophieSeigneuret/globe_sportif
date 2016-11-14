@@ -1,6 +1,6 @@
 /* ---------------------------------------------------------------------------- */
 /* RESET */
-/* Essai Pilar */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,27 +8,14 @@
 }
 
 
-html {
-    font-size: 16px;
-}
-
-
 /* ---------------------------------------------------------------------------- */
 /* ALL PAGE */
 
 body {
-    background-color: #343642;
+    /*background-color: #343642;*/
     margin: 0 auto;
-    font-family: 'Raleway', sans-serif;
-    box-sizing: border-box;
-}
-
-#wrapper {
-    width: 80%;
-    max-width: 1200px;
-    min-width: 900px;
-    margin: auto;
-    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 
@@ -39,7 +26,7 @@ body {
 #form_reservation h2 {
     width: 100%;
     color: #ffffff;
-    background-color: #343642;
+    background-color: #348899;
     margin-bottom: 50px;
     padding: 20px 50px;
 }
@@ -60,11 +47,11 @@ body {
 }
 
 #form_reservation fieldset {
-    border-color: #962d3e;
+    border-color: #343642;
  }
 
 #form_reservation fieldset legend {
-    color: #962d3e;
+    color: #348899;
     padding: 0 20px;
     margin-bottom: 10px;
     position: relative;
@@ -145,7 +132,7 @@ caption {
 
 /* ligne entête */
 #recap thead {
-    background-color: #343642;
+    background-color: #348899;
     color: #ffffff;
 }
 
@@ -202,19 +189,22 @@ caption {
 }
 
 #lien_provisoire {
-    color: #ffffff;
+    color: #343642;
 }
 
-#info_forfait {
+#informations_forfait {
     margin-bottom: 30px;
 }
 
 /* image forfait */
-#image_forfait {
+#photo_forfait {
     display: inline-block;
     margin: 0 20px 0 30px;
     width: 50%;
-    min-width: 25%;
+}
+
+#image_forfait {
+    width: 100%;
 }
 
 #descriptif {
@@ -226,7 +216,7 @@ caption {
 /* titre catégorie */
 #detail_forfait h2 {
     color: #ffffff;
-    background-color: #343642;
+    background-color: #348899;
     margin-bottom: 30px;
     padding: 20px 30px;
 }
@@ -279,13 +269,13 @@ caption {
     display: inline-block;
     padding: 10px;
     border: 1px solid #343642;
-    background-color: #343642;
+    background-color: #348899;
     text-decoration: none;
     border-radius: 5px 5px 0 0;
 }
 
 #liste_onglets li:hover {
-    background-color: #348899;
+    background-color: #343642;
 }
 
 #liste_onglets li a {
