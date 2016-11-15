@@ -157,7 +157,7 @@ header ul li a:hover{
     vertical-align: top;
     position:relative;/*conteneur pour placer textes*/
 }
-h3 {/*titres 4 images forfait*/
+#forfaits h3 {/*titres 4 images forfait*/
     text-align: center;
     font-size: 1.5rem;
     font-weight: 200;
