@@ -7,21 +7,17 @@
 */
 
 * {
-    margin: 0;
-    padding: 0;
+    margin : 0;
+    padding : 0;
     box-sizing: border-box;
 }
-
-
-/* ---------------------------------------------------------------------------- */
-/* ALL PAGE */
-
 body {
-    /*background-color: #343642;*/
-    margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    margin:0 auto;
 }
+
+
 
 /*------------------------------   Container (centre la page)    ---------------------*/
 .container {
@@ -34,9 +30,7 @@ header {
     background-color: #348899 ;
     min-height: 130px;
     width: 100%;
-    color: #ffffff;
-    margin-bottom: 50px;
-    padding: 20px 50px; margin-top: 0;
+    margin-top: 0;
 }
 header img { /*logo*/
     display: inline-block;
@@ -64,6 +58,230 @@ header ul li a{
 }
 header ul li a:hover{
     color: #a1f7f9;
+}
+/*-------------------------------------------   Section menu forfaits icons   -------------------------------------*/
+#sec_menu_forfait{
+    background-color: #952C3F;
+}
+#sec_menu_forfait ul{
+    width:100%;
+    vertical-align: top;
+    background-color: #952c3f;
+}
+
+#sec_menu_forfait ul li {
+    width: 25%;
+    display: inline-block;
+    /*background-color:#979C9C;*/
+}
+#sec_menu_forfait ul li a{
+    display : block;
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+#sec_menu_forfait ul li a:hover{
+    color: #F2EAC9;
+}
+#sec_menu_forfait  ul li a img{
+    width: 20%;
+    float:left;
+    display : block;
+    padding : 0 ;
+}
+#sec_menu_forfait  ul li p{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding: 20px 0 0 70px;
+}
+/*------------------------------------------   section carrousel   --------------------------------*/
+#carrousel img {
+    margin:0 auto;
+    width: 100%;
+}
+.slides{
+    position: relative;
+}
+#carrousel h1 {/*titres slides*/
+    position: absolute;
+    font-size: 4rem;
+    font-weight: 200;
+    color: #FFFFFF;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+/*-----------------------------------------------   Section info  ------------------------------------*/
+#sec_info{
+    background-color:#fcfbf8;
+    min-height: inherit;
+}
+#sec_info h2 {/*titres info*/
+    width: 80%;
+    font-size: 3rem;
+    margin:0 auto;
+    padding: 50px 0 50px 0;
+    text-align: center;
+    font-weight: 200;
+}
+#sec_info p{
+    margin:0 auto;
+    width: 80%;
+    padding: 0 0 50px 0;
+    text-align: justify;
+    font-size: 1.4rem;
+    Line-height: 1.5em;
+    font-weight: 300;
+}
+/*----------------------------------------------  Section forfaits  ------------------------------------*/
+#sec_nos_forfaits{
+    background-color: #ededed;
+}
+#sec_nos_forfaits img{
+    width: 100%;
+    float: left;
+}
+#forfaits {
+    width:100%;
+}
+#forfaits>ul {
+    list-style:none;
+}
+#forfaits>ul>li {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    position:relative;/*conteneur pour placer textes*/
+}
+h3 {/*titres 4 images forfait*/
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 60px;
+    background: rgba(0, 0, 0, 0.5);
+}
+/*------------------------------------------------   Footer    ----------------------------------*/
+#footer{
+    background-color:#343641;
+    min-height: 150px;
+}
+#footer p {/*copyrigth*/
+    font-size: 0.8rem;
+    font-weight: 200;
+    float:left;
+    padding: 40px 0 0 100px;
+    color: #FFFFFF;
+}
+/*menu footer*/
+#footer ul{
+    padding: 40px 100px 0 0;
+    float: right;
+}
+#footer ul li {
+    display: inline-block;
+    font-weight: 200;
+    font-size: 0.8rem;
+    border-right: 1px solid #FFFFFF;
+}
+#footer ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding : 5px 15px 5px 15px ;
+}
+#footer ul li a:hover{
+    color: #a1f7f9;
+}
+
+
+/*------------------------------------------------   page forfaits    ----------------------------------*/
+
+.selection img{
+    float:left;
+    margin:0 15px 0 0;
+}
+.selection ul{
+    width: 100%;
+    list-style:none;
+}
+.selection ul li{
+    margin:20px 0 20px 0;
+    background:#f3f3f1;
+    min-height: 155px;
+}
+.selection h2{
+    font-size: 1.6rem;
+    padding: 15px 0 8px 0;
+    font-weight: 400;
+}
+.selection h2 a{
+    text-decoration: none;
+    color: #952C3F;
+}
+.selection .info_forfait{
+    width: 55%;
+    display: inline-block;
+    padding-top: 15px;
+}
+
+.selection ul li .lieu  {
+    font-size: 1.2rem;
+    color: #388998;
+    text-decoration: none;
+    font-weight: 300;
+}
+.selection ul li .lieu .numero{
+    font-size:0.8em;
+    font-weight:500;
+    width:25px;
+    height:25px;
+    border-radius:12px;
+    background:#2E2A2A;
+    text-align:center;
+    color:#ffffff;
+    float:left;
+    margin:0 5px 0 0;
+    padding-top: 4px;
+}
+.selection .contact{
+    display: inline-block;
+    vertical-align: top;
+    /*border: 1px solid #000000;*/
+    margin-left: 50px;
+}
+.contact a{
+    text-decoration: none;
+    color: #388998;
+    padding: 20px;
+    font-weight:300;
+    font-size: 1.2rem;
+}
+.contact a:hover{
+    color: #952C3F;
+}
+
+
+
+
+
+
+
+/*------------------------------------------------   formulaire    ----------------------------------*/
+
+#form_reservation h2 {
+    width: 100%;
+    color: #ffffff;
+    background-color: #348899;
+    margin-bottom: 50px;
+    padding: 20px 50px;
 }
 
 /* formulaire global */
@@ -141,9 +359,7 @@ fieldset#resa_client input {
 
 
 
-/* ---------------------------------------------------------------------------- */
-/* TABLEAU RECAPITULATIF */
-
+/*------------------------------------------------   tableau formulaire    ----------------------------------*/
 
 /* tableau entier */
 #recap {
@@ -203,9 +419,7 @@ caption {
 
 
 
-/* ---------------------------------------------------------------------------- */
-/* DETAIL - LIGHTBOX */
-
+/*------------------------------------------------   page détail - lightbox    ----------------------------------*/
 
 .lightbox {
     display: none;
@@ -294,7 +508,8 @@ caption {
 }
 
 
-/* onglets */
+
+/*------------------------------------------------   onglets page détail    ----------------------------------*/
 
 #onglets {
     padding: 0 30px 30px;
