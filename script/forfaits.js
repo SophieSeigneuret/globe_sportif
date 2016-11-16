@@ -3,7 +3,6 @@
 var categories = ["Destination Surf", "Espaces sous-marins", "Snow attitude", "Randonnée et sac à dos"];
 var forfaits = [
     {
-        id: "forfait_1",
         nom: "Tibau Do Sul (Brésil)",
         categorie: "Destination Surf",
         lieu: "<ul><li>Une côte exposée aux grandes houles de l’Atlantique. Nous sommes au \"paradis des surfeurs\". Grâce à sa position géographique, le littoral de Rio Grande do Norte reçoit des alizés constants de sud-est.</li></ul>",
@@ -21,7 +20,6 @@ var forfaits = [
         photo_cat: "images/categorie/nature.jpg"
     },
     {
-        id: "forfait_2",
         nom: "Le Vauclin (Martinique)",
         categorie: "Destination Surf",
         lieu: "<ul><li>Du site de Tartane, avec sa presqu’île exposée à la houle de l’Atlantique, aux plages du Sud entre Trabaud et le Diamand, la Martinique propose un grand nombre de spots pour les surfeurs de tous niveaux.</li><li>Le Surf Safari vous propose de partir tous les jours en minibus sur le spot le plus adapté aux conditions et à votre niveau pour surfer au bon endroit au bon moment… Une belle occasion de découvrir la Martinique, sa nature sauvage et inconnue du grand public.</li><br/><li>Cet immense lagon peu profond offre des zones de navigation pour chaque pratique. Vague de récif par longue houle de Nord-Est.</li></ul>",
@@ -39,7 +37,6 @@ var forfaits = [
         photo_cat: "images/categorie/croisiere_01.jpg"
     },
     {
-        id: "forfait_3",
         nom: "Fuerteventura (Canaries)",
         categorie: "Destination Surf",
         lieu: "<ul><li>Vent dominant Nord/Nord-est constant, régime de houle bien établit.</li><li>Régularité et consistance des vagues lisses et tubulaires, quelles que soient leur taille, garantissent un large choix de \"spots\" pour tous les niveaux.</li><li>Matériel Gamme complète de planches, d’ailes et de voiles les plus récentes.</li></ul>",
@@ -57,7 +54,6 @@ var forfaits = [
         photo_cat: "images/categorie/croisiere_02.jpg"
     },
     {
-        id: "forfait_4",
         nom: "Les Saintes (Guadeloupe)",
         categorie: "Espaces sous-marins",
         lieu: "<ul><li>Un séjour idéal pour découvrir l’archipel des Saintes en douceur.</li><li>En kayak, vous explorez les criques cachées de l’archipel : Plage de sable blanc, baignades, observations sous-marines (masque, tuba) et pause sous les cocotiers.</li><li>Une demi-journée réservée à l’initiation et à la pratique du stand up paddle.</li><li>Un programme mi-temps pour un bon équilibre entre activité sportive et détente.</li><br/><li>Grande baie protégée bercée par l’Alizé.</li><li>Catamaran, windsurf et kitesurf disponibles sur de larges zones de pratiques.</li><li>Kayak de mer, stand up paddle et plongée permettent d’explorer les petites criques et de découvrir les fonds marins.</li></ul>",
@@ -75,7 +71,6 @@ var forfaits = [
         photo_cat: "images/categorie/ours_02.jpg"
     },
     {
-        id: "forfait_5",
         nom: "El Gouna (Egypte)",
         categorie: "Espaces sous-marins",
         lieu: "<ul><li>La plongée libre ou plongée en apnée vous permet de découvrir les fonds marins sans la lourdeur du matériel (bloc à air) avec des immersions de quelques minutes en harmonie avec le monde sous marin. Cette approche sportive de la plongée avec l’écoute de son corps sera prise en compte par votre moniteur. </li><li>Tout en progressivité vous apprendrez différentes techniques de respiration, de relaxation, de déplacement sous l’eau et de maitrise de soi. </li><li>Chacun à son rythme, chaque jour vous partez en bateau pour la journée, et alternez plongée et vie bord du bateau. </li><li>Au cœur d’un aquarium géant vous découvrirez les récifs coralliens et poissons multicolores de la Mer Rouge.</li><br/> <li>Sous l’eau, c’est la symphonie des couleurs… Récifs de coraux qui comptent plus de 9500 espèces de poissons… Plongée à la journée sur les nombreux sites : Fanadir: 2 plateaux l’un à 12 mètres, l’autre à 80 mètres, ou l’on évolue dans la zone des 20 mètres avec la sensation d’être dans le grand bleu.</li></ul>",
@@ -93,7 +88,6 @@ var forfaits = [
         photo_cat: "images/categorie/tente.jpg"
     },
     {
-        id: "forfait_6",
         nom: "Mer d'Andaman (Thaïlande)",
         categorie: "Espaces sous-marins",
         lieu: "<ul><li>À l’Ouest de la Thaïlande, à proximité de la Birmanie, l’archipel des Similan est un groupe de 9 îles tropicales inhabitées ourlées de sable blanc, classé Parc National Maritime. Avec les îles voisines de Surin et de Richelieu, c’est l’un des plus beaux sites de plongée d’Asie, par la limpidité de l’eau de la mer d’Andaman et la richesse de la vie. Dans un fantastique paysage sous-marin formé d’énormes blocs de granit recouverts de corail, la faune est au diapason du décor, vous aurez peut-être la chance d’observer raies mantas et pastenagues, thons et carangues, requins léopards et barracudas, et parfois requin-baleine.</li></ul>",
@@ -111,7 +105,6 @@ var forfaits = [
         photo_cat: "images/categorie/station_ski.jpg"
     },
     {
-        id: "forfait_7",
         nom: "Ski freerando Val d'Isère (France)",
         categorie: "Snow attitude",
         lieu: "<ul><li>Venez glisser sur un des domaines les plus prestigieux au monde bordé par la frontière italienne et le parc national de la Vanoise: l’espace Killy formé par les stations de Val d’Isère et de Tignes. Laissez-vous surprendre par le charme d’un village typique de Haute-Tarentaise et d’une station vivante pour des vacances pas comme les autres !</li><br/><li>152 Pistes : 1550 m / 3456 m</li><li>Domaine skiable commun à Val d’Isère et à Tignes : un terrain de jeu de 10 000 ha accessible à tous.</li><li>300 km de pistes, 2 glaciers, 79 remontées mécaniques, 2 snowparks, 900 canons à neige, un des plus beaux domaines hors-piste, une zone d’entrainement DVA, espace \"nature ride\" : pistes noires balisées, sécurisées et non damées.</li><li></li><li></li></ul>",
@@ -129,7 +122,6 @@ var forfaits = [
         photo_cat: "images/categorie/ski.jpg"
     },
     {
-        id: "forfait_8",
         nom: "Hors piste Chamonix (France)",
         categorie: "Snow attitude",
         lieu: "<ul><li>Loin des grands domaines ski au pied, Chamonix est composé de plusieurs domaines skiables, reliés entre eux par bus ou train.</li><br/><li>Votre forfait donne accès à tous les domaines : la Flégère / le Brévent, Le Tour / Vallorcine, Lognan / les Grands Montets (accessible à pied depuis le centre), l’Aiguille du Midi, le train du Montenvers et plusieurs petits domaines de bas de vallée. </li></ul>",
@@ -147,7 +139,6 @@ var forfaits = [
         photo_cat: "images/categorie/lac_louise.jpg"
     },
     {
-        id: "forfait_9",
         nom: "Chien de traineau Vanoise (France)",
         categorie: "Snow attitude",
         lieu: "<ul><li>Au cœur du parc national de la Vanoise et du Beaufortain, dans un espace préservé immense, ce séjour est une invitation à découvrir une région authentique par le biais d’activités originales et variées. </li><li>L'expérience avec les chiens de traîneau, la pratique de la randonnée en raquettes, la nuit sur les hauts plateaux de la vallée de Nave dans un refuge flambant neuf sont des loisirs qui sauront vous ravir. </li></ul>",
@@ -165,7 +156,6 @@ var forfaits = [
         photo_cat: "images/categorie/lac_moraine.jpg"
     },
     {
-        id: "forfait_10",
         nom: "Terre de feu (Patagonie)",
         categorie: "Randonnée et sac à dos",
         lieu: "<ul><li>Un grand voyage au bout du monde : 2 000 km de Ushuaia à El Calafate à travers les vastes espaces de Patagonie balayés par les vents et parcourus par les vigognes. À pied, vous découvrez la Terre de Feu, à l’extrémité australe de l’Amérique, puis les paysages sauvages des grands parcs nationaux des Andes chiliennes et argentines : lacs, fjords, glaciers et sommets mythiques aux formes pures comme les Torres del Paine, le Cerro Torre ou le Fitz Roy. </li></ul>",
@@ -183,7 +173,6 @@ var forfaits = [
         photo_cat: "images/categorie/Caribou.jpg"
     },
     {
-        id: "forfait_11",
         nom: "La caravanne du Désert (Maroc)",
         categorie: "Randonnée et sac à dos",
         lieu: "<ul><li>Jadis les caravanes de dromadaires étaient le seul moyen de communication entre le Maghreb et l’Afrique noire, à travers les étendues infinies du grand désert. </li><li>Au rythme de vos dromadaires de bât, partez à pied sur les traces des grandes caravanes des temps passés, au cœur du plus grand massif de dunes du Maroc. Dès les premiers pas de votre trek, vous serez imprégnés du charme particulier de ces régions et du grand mystère du Sahara. </li><br/><li>À la belle saison, les amplitudes thermiques sont importantes. Les journées peuvent être très chaudes, mais l’altitude atténue les températures qui deviennent fraîches, voire franchement froides dès que le soleil n’est plus là. Le temps est généralement sec, mais des périodes de mauvais temps et des orages parfois violents peuvent survenir. Tenez-en compte dans le choix de votre équipement (duvet, vêtements chauds particulièrement pour le soir et la nuit, cape de pluie). </li></ul>",
@@ -201,7 +190,6 @@ var forfaits = [
         photo_cat: "images/categorie/aventure_01.jpg"
     },
     {
-        id: "forfait_12",
         nom: "Pyramides Mayas (Guatemala)",
         categorie: "Randonnée et sac à dos",
         lieu: "<ul><li>Jadis cœur de la civilisation maya à son apogée, le Guatemala est le pays le plus indien d’Amérique Centrale. Cités coloniales et villages indigènes parsèment les hautes terres de l’ouest, dont le joyau est le lac Atitlan dans son écrin de volcans aux cônes parfaits. Après avoir découvert les paysages grandioses de l’Altiplano et admiré les couleurs somptueuses des costumes traditionnels et des marchés locaux, vous prenez la route du plateau tropical du Peten. Les immenses pyramides mayas de Tikal, perdues au fin fond de la jungle, sont le point d’orgue de ce voyage.</li></ul>",
@@ -220,12 +208,4 @@ var forfaits = [
     }
 ];
 
-
-function rechercher_descriptif_forfait (id_forfait) {
-    for (var i=0 ; i < forfaits.length ; i++) {
-        if (forfaits[i].id == id_forfait) {
-            return forfaits[i];
-        }
-    }
-}
 

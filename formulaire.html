@@ -9,15 +9,15 @@
 <body>
 <div id="form_reservation">
     <h2>Réservation</h2>
-    <form action="">
+    <form action="" id="form_resa">
         <fieldset id="infos_client">
             <legend>Vos informations</legend>
 
             <label for="nom">NOM</label>
-            <input type="text" name="nom" id="nom" value="" required="required"/>
+            <input type="text" name="nom" id="nom" value=""/>
 
             <label for="prenom">PRENOM</label>
-            <input type="text" name="prenom" id="prenom" value="" required="required"/>
+            <input type="text" name="prenom" id="prenom" value=""/>
 
             <label for="mail">COURRIEL</label>
             <input type="email" name="mail" id="mail" value=""/>
@@ -45,11 +45,16 @@
             <input type="number" name="nb_participants" id="nb_participants" value="1" min="1"/>
 
             <label for="nb_animaux">Nombre d'animaux</label>
-            <input type="number" name="nb_animaux" id="nb_animaux" value="0" min="0" max="2"/>
+            <!--<input type="number" name="nb_animaux" id="nb_animaux" value="0" min="0" max="2"/>-->
+            <select name="nb_animaux" id="nb_animaux">
+                <option value="zero">0</option>
+                <option value="un">1</option>
+                <option value="deux">2</option>
+            </select>
         </fieldset>
 
         <table id="recap">
-            <caption>RÉSUMÉ</caption>
+            <caption>Résumé</caption>
             <thead>
             <tr>
                 <th>Options</th>
@@ -81,6 +86,9 @@
         </div>
     </form>
 </div>
-<script src="script/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="script/forfaits.js"></script>
+<script src="script/formulaire.js"></script>
 </body>
 </html>

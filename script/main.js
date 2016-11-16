@@ -3,6 +3,18 @@
  */
 "use strict";
 
+
+//function rechercher_descriptif_forfait (id_forfait) {
+//    for (var i=0 ; i < forfaits.length ; i++) {
+//        if (forfaits[i].id == id_forfait) {
+//            return forfaits[i];
+//        }
+//    }
+//}
+
+
+
+
 // onglets page détail
 $( function() {
     $( "#onglets" ).tabs();
@@ -10,7 +22,7 @@ $( function() {
 
 
 // AJOUT DESCRIPTIF PAGE DETAIL
-var forfait_voulu = rechercher_descriptif_forfait("forfait_1");
+var forfait_voulu = forfaits[3];
 // photo forfait
 document.querySelector("#informations_forfait div:first-of-type").innerHTML = forfait_voulu.photo;
 // nom categorie
@@ -39,4 +51,9 @@ document.querySelector("#infos_pratiques p").innerHTML = forfait_voulu.infos;
 document.querySelector("#hebergement p").innerHTML = forfait_voulu.hebergement;
 // niveau
 document.querySelector("#niveau p").innerHTML = forfait_voulu.niveau;
+
+
+// FOND COULEUR ONGLET SELECTIONNÉ
+var lien_onglets = document.getElementById("liste_onglets").getElementsByTagName("a");  // selection des "a" des onglets
+lien_onglets.className = "active";  // ajout de la classe active aux liens
 

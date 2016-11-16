@@ -1,27 +1,281 @@
-/* ---------------------------------------------------------------------------- */
-/* RESET */
+/*color
+#952C3F rouge
+#343641 blue fonce
+#979C9C gris
+#F2EAC9 jaune clair
+#388998 bleu
+*/
 
 * {
-    margin: 0;
-    padding: 0;
+    margin : 0;
+    padding : 0;
     box-sizing: border-box;
 }
-
-
-/* ---------------------------------------------------------------------------- */
-/* ALL PAGE */
-
 body {
-    /*background-color: #343642;*/
-    margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    margin:0 auto;
 }
 
 
 
-/* ---------------------------------------------------------------------------- */
-/* FORMULAIRE */
+/*------------------------------   Container (centre la page)    ---------------------*/
+.container {
+    max-width: 1170px;
+    margin:0 auto;
+    min-height: inherit;
+}
+/*-------------------------------------------   Header   -------------------------------------*/
+header {
+    background-color: #348899 ;
+    min-height: 130px;
+    width: 100%;
+    margin-top: 0;
+}
+header img { /*logo*/
+    display: inline-block;
+    width: 30%;
+    float:left;
+    padding: 40px  0 20px  0;
+    vertical-align: top;
+}
+/*menu principal contact anglais*/
+header ul{
+    padding-top: 50px;
+    float: right;
+}
+header ul li {
+    display: inline-block;
+    font-weight: 200;
+    font-size: 1rem;
+    border-right: 1px solid #FFFFFF;
+}
+header ul li a{
+    display : block;
+    text-decoration: none;
+    color: #fff;
+    padding : 5px 15px 5px 15px ;
+}
+header ul li a:hover{
+    color: #a1f7f9;
+}
+/*-------------------------------------------   Section menu forfaits icons   -------------------------------------*/
+#sec_menu_forfait{
+    background-color: #952C3F;
+}
+#sec_menu_forfait ul{
+    width:100%;
+    vertical-align: top;
+    background-color: #952c3f;
+}
+
+#sec_menu_forfait ul li {
+    width: 25%;
+    display: inline-block;
+    /*background-color:#979C9C;*/
+}
+#sec_menu_forfait ul li a{
+    display : block;
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+#sec_menu_forfait ul li a:hover{
+    color: #F2EAC9;
+}
+#sec_menu_forfait  ul li a img{
+    width: 20%;
+    float:left;
+    display : block;
+    padding : 0 ;
+}
+#sec_menu_forfait  ul li p{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding: 20px 0 0 70px;
+}
+/*------------------------------------------   section carrousel   --------------------------------*/
+#carrousel img {
+    margin:0 auto;
+    width: 100%;
+}
+.slides{
+    position: relative;
+}
+h1 {/*titres slides*/
+    position: absolute;
+    font-size: 4rem;
+    font-weight: 200;
+    color: #FFFFFF;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+/*-----------------------------------------------   Section info  ------------------------------------*/
+#sec_info{
+    background-color:#fcfbf8;
+    min-height: inherit;
+}
+#sec_info h2 {/*titres info*/
+    width: 80%;
+    font-size: 3rem;
+    margin:0 auto;
+    padding: 50px 0 50px 0;
+    text-align: center;
+    font-weight: 200;
+}
+#sec_info p{
+    margin:0 auto;
+    width: 80%;
+    padding: 0 0 50px 0;
+    text-align: justify;
+    font-size: 1.4rem;
+    Line-height: 1.5em;
+    font-weight: 300;
+}
+/*----------------------------------------------  Section forfaits  ------------------------------------*/
+#sec_nos_forfaits{
+    background-color: #ededed;
+}
+#sec_nos_forfaits img{
+    width: 100%;
+    float: left;
+}
+#forfaits {
+    width:100%;
+}
+#forfaits>ul {
+    list-style:none;
+}
+#forfaits>ul>li {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    position:relative;/*conteneur pour placer textes*/
+}
+/*h3 {!*titres 4 images forfait*!*/
+    /*text-align: center;*/
+    /*font-size: 1.5rem;*/
+    /*font-weight: 200;*/
+    /*text-transform: uppercase;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*color: #FFFFFF;*/
+    /*width: 100%;*/
+    /*padding: 60px;*/
+    /*background: rgba(0, 0, 0, 0.5);*/
+/*}*/
+
+/*------------------------------------------------   Footer    ----------------------------------*/
+#footer{
+    background-color:#343641;
+    min-height: 150px;
+}
+#footer p {/*copyrigth*/
+    font-size: 0.8rem;
+    font-weight: 200;
+    float:left;
+    padding: 40px 0 0 100px;
+    color: #FFFFFF;
+}
+/*menu footer*/
+#footer ul{
+    padding: 40px 100px 0 0;
+    float: right;
+}
+#footer ul li {
+    display: inline-block;
+    font-weight: 200;
+    font-size: 0.8rem;
+    border-right: 1px solid #FFFFFF;
+}
+#footer ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding : 5px 15px 5px 15px ;
+}
+#footer ul li a:hover{
+    color: #a1f7f9;
+}
+
+
+/*------------------------------------------------   page forfaits    ----------------------------------*/
+
+.selection img{
+    float:left;
+    margin:0 15px 0 0;
+}
+.selection ul{
+    width: 100%;
+    list-style:none;
+}
+.selection ul li{
+    margin:20px 0 20px 0;
+    background:#f3f3f1;
+    min-height: 155px;
+}
+.selection h2{
+    font-size: 1.6rem;
+    padding: 15px 0 8px 0;
+    font-weight: 400;
+}
+.selection h2 a{
+    text-decoration: none;
+    color: #952C3F;
+}
+.selection .info_forfait{
+    width: 55%;
+    display: inline-block;
+    padding-top: 15px;
+}
+
+.selection ul li .lieu  {
+    font-size: 1.2rem;
+    color: #388998;
+    text-decoration: none;
+    font-weight: 300;
+}
+.selection ul li .lieu .numero{
+    font-size:0.8em;
+    font-weight:500;
+    width:25px;
+    height:25px;
+    border-radius:12px;
+    background:#2E2A2A;
+    text-align:center;
+    color:#ffffff;
+    float:left;
+    margin:0 5px 0 0;
+    padding-top: 4px;
+}
+.selection .contact{
+    display: inline-block;
+    vertical-align: top;
+    /*border: 1px solid #000000;*/
+    margin-left: 50px;
+}
+.contact a{
+    text-decoration: none;
+    color: #388998;
+    padding: 20px;
+    font-weight:300;
+    font-size: 1.2rem;
+}
+.contact a:hover{
+    color: #952C3F;
+}
+
+
+
+
+
+
+
+/*------------------------------------------------   formulaire    ----------------------------------*/
 
 #form_reservation h2 {
     width: 100%;
@@ -52,42 +306,48 @@ body {
 
 #form_reservation fieldset legend {
     color: #348899;
-    padding: 0 20px;
+    padding: 0 50px 0 20px;
     margin-bottom: 10px;
     position: relative;
-    bottom: 5px;
+    bottom: 2px;
+    left: 20px;
 }
 
 
 /* vos informations */
 fieldset#infos_client label {
-    margin-left: 5%;
+    margin-left: 2%;
     text-align: left;
     display: inline-block;
-    width: 20%;
+    width: 15%;
     color: #343642;
 }
 
 fieldset#infos_client input {
     height: 30px;
-    margin-bottom: 20px;
+    margin: 0 10px 20px 0;
     width: 65%;
 }
 
 /* votre réservation */
 fieldset#resa_client label {
-    margin-left: 5%;
+    margin-left: 2%;
     text-align: left;
     display: inline-block;
-    width: 30%;
+    width: 22%;
     color: #343642;
 }
 
 fieldset#resa_client input {
     height: 30px;
-    margin-bottom: 20px;
-    width: 55%;
+    margin: 0 10px 20px 0;
+    width: 58%;
 }
+
+#resa_client select {
+    height: 30px;
+}
+
 
 .bouton_submit {
     padding: 10px;
@@ -105,10 +365,21 @@ fieldset#resa_client input {
 }
 
 
+/* messages d'erreur */
+#form_resa .error {
+    border: 1px solid #962d3e;
+}
 
-/* ---------------------------------------------------------------------------- */
-/* TABLEAU RECAPITULATIF */
+#form_resa .error_msg {
+    display : inline-block;
+    margin:0;
+    color: #962d3e;
+}
 
+
+
+
+/*------------------------------------------------   tableau formulaire    ----------------------------------*/
 
 /* tableau entier */
 #recap {
@@ -120,9 +391,9 @@ fieldset#resa_client input {
 /* titre "Récapitulatif" */
 caption {
     /*font-size: 1.3rem;*/
-    margin: 0 0 10px 15px;
-    color: #343642;
-    text-align: center;
+    margin: 0 0 10px 5px;
+    color: #348899;
+    text-align: left;
 }
 
 /* les lignes th et td */
@@ -168,9 +439,7 @@ caption {
 
 
 
-/* ---------------------------------------------------------------------------- */
-/* DETAIL - LIGHTBOX */
-
+/*------------------------------------------------   page détail - lightbox    ----------------------------------*/
 
 .lightbox {
     display: none;
@@ -244,12 +513,12 @@ caption {
 }
 
 #bouton_resa:hover {
-     color: #f2ebc7;
+     background-color: #343642;
  }
 
 #bouton_retour {
     display: block;
-    margin-top: 20px;
+    margin-top: 15px;
     color: #343642;
     text-decoration: none;
 }
@@ -259,44 +528,79 @@ caption {
 }
 
 
-/* onglets */
+
+/*------------------------------------------------   onglets page détail    ----------------------------------*/
 
 #onglets {
     padding: 0 30px 30px;
 }
 
-#liste_onglets li {
-    display: inline-block;
-    padding: 10px;
-    border: 1px solid #343642;
+/*#liste_onglets li {*/
+    /*display: inline-block;*/
+    /*border: 1px solid #343642;*/
+    /*background-color: #348899;*/
+    /*text-decoration: none;*/
+    /*border-radius: 5px 5px 0 0;*/
+/*}*/
+
+#liste_onglets li a:hover {
     background-color: #348899;
-    text-decoration: none;
+    color: #ffffff;
     border-radius: 5px 5px 0 0;
 }
 
-#liste_onglets li:hover {
-    background-color: #343642;
-}
 
-#liste_onglets li a {
-    text-decoration: none;
-    color: #ffffff;
-}
+/*#liste_onglets li a {*/
+    /*text-decoration: none;*/
+    /*color: #ffffff;*/
+    /*display: block;*/
+    /*padding: 10px;*/
+/*}*/
 
 #onglets div {
-    border: 1px solid #343642;
+    border: 1px solid rgba(151, 156, 156, 0.5);
     border-radius: 0 0 5px 5px;
     padding: 10px;
-    position: relative;
-    bottom: 1px;
+    /*position: relative;*/
+    /*bottom: 1px;*/
 }
 
 #le_lieu li, #infos_pratiques li, #hebergement li, #niveau li {
     list-style-type: none;
+    color: #343642;
 }
 
 #infos_pratiques a  {
     text-decoration: none;
-    color: #343642;
+    color: #348899;
 }
+
+
+/* ul */
+.ui-widget-header {
+    background-color: #ffffff;
+    border: none;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    background-color: #348899;
+    /*border-radius: 5px 5px 0 0;*/
+    border: 1px solid #348899;
+}
+
+.ui-widget.ui-widget-content {
+    border: none;
+}
+
+.ui-tabs .ui-tabs-nav{
+    padding: 0;
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-top-right-radius: 8px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-top-left-radius: 8px;
+}
+
 
