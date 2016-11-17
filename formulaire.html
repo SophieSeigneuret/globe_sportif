@@ -44,13 +44,15 @@
             <label for="nb_participants">Nombre de participants</label>
             <input type="number" name="nb_participants" id="nb_participants" value="1" min="1"/>
 
-            <label for="nb_animaux">Nombre d'animaux</label>
-            <!--<input type="number" name="nb_animaux" id="nb_animaux" value="0" min="0" max="2"/>-->
-            <select name="nb_animaux" id="nb_animaux">
-                <option value="zero">0</option>
-                <option value="un">1</option>
-                <option value="deux">2</option>
-            </select>
+            <div id="animaux">
+                <label for="nb_animaux">Nombre d'animaux</label>
+                <!--<input type="number" name="nb_animaux" id="nb_animaux" value="0" min="0" max="2"/>-->
+                <select name="nb_animaux" id="nb_animaux">
+                    <option value="zero">0</option>
+                    <option value="un">1</option>
+                    <option value="deux">2</option>
+                </select>
+            </div>
         </fieldset>
 
         <table id="recap">
@@ -64,9 +66,9 @@
             </thead>
             <tbody>
             <tr>
-                <td>Forfait</td>
-                <td>2</td>
-                <td>1550 $</td>
+                <td>nom forfait</td>
+                <td>nb pers.</td>
+                <td>prix unit</td>
             </tr>
             <tr>
                 <td>Animal de compagnie</td>
@@ -75,7 +77,7 @@
             </tr>
             <tr>
                 <td colspan="2">Total</td>
-                <td>3640 $</td>
+                <td>prix total $</td>
             </tr>
             </tbody>
         </table>
