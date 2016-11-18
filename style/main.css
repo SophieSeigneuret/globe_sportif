@@ -204,12 +204,13 @@ header ul li a:hover{
 
 /*------------------------------------------------   page forfaits    ----------------------------------*/
 
-.accordion-container {
+
+#catalogue .accordion-container {
     width: 100%;
     margin: 20px 0 20px;
     clear: both;
 }
-.accordion-toggle {
+#catalogue .accordion-toggle {
     position: relative;
     display: block;
     padding: 20px;
@@ -219,66 +220,62 @@ header ul li a:hover{
     color: #fff;
     text-decoration: none;
 }
-.accordion-toggle.open {
+#catalogue .accordion-toggle.open {
     background: #333;
     color: #fff;
 }
-.accordion-toggle:hover {
+#catalogue .accordion-toggle:hover {
     background: #666;
 }
-.accordion-toggle span.toggle-icon {
+#catalogue .accordion-toggle span.toggle-icon {
     position: absolute;
     top: 9px;
     right: 20px;
     font-size: 1.5em;
 }
-.accordion-content {
+#catalogue .accordion-content {
     display: none;
     /*padding: 20px;*/
     overflow: auto;
 }
-.accordion-content img {
+#catalogue .accordion-content img {
     display: block;
     float: left;
     margin: 0 15px 10px 0;
     max-width: 100%;
     height: auto;
 }
-.accordion-content img{
-    float:left;
-    margin:0 15px 0 0;
-}
-.accordion-content ul{
+#catalogue .accordion-content ul{
     width: 100%;
     list-style:none;
 }
-.accordion-content ul li{
+#catalogue .accordion-content ul li{
     margin:20px 0 20px 0;
     background:#f3f3f1;
     min-height: 155px;
 }
-.accordion-content h2{
+#catalogue .accordion-content h2{
     font-size: 1.6rem;
     padding: 15px 0 8px 0;
     font-weight: 400;
 }
-.accordion-content h2 a{
+#catalogue .accordion-content h2 a{
     text-decoration: none;
     color: #952C3F;
 }
-.accordion-content .info_forfait{
+#catalogue .accordion-content .info_forfait{
     width: 55%;
     display: inline-block;
     padding-top: 15px;
 }
 
-.accordion-content ul li .lieu  {
+#catalogue .accordion-content ul li .lieu  {
     font-size: 1.2rem;
     color: #388998;
     text-decoration: none;
     font-weight: 300;
 }
-.accordion-content ul li .lieu .numero{
+#catalogue .accordion-content ul li .lieu .numero{
     font-size:0.8em;
     font-weight:500;
     width:25px;
@@ -291,7 +288,7 @@ header ul li a:hover{
     margin:0 5px 0 0;
     padding-top: 4px;
 }
-.accordion-content .contact{
+#catalogue .accordion-content .contact{
     display: inline-block;
     vertical-align: top;
     /*border: 1px solid #000000;*/
