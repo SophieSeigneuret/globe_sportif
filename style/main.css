@@ -495,6 +495,57 @@ caption {
 }
 
 
+/* boutons submit */
+.bouton_submit:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #962d3e;
+}
+
+/* modal box confirmation de réservation */
+
+.modal_box_container {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
+    z-index: 100;
+}
+
+.modal_box_container > .modal_box_background {
+    display: block;
+    background-color: #343642;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#confirm_resa {
+    background-color: #ffffff;
+    display: none;
+    margin: 100px auto;
+    position: relative;
+    width: 50%;
+    padding: 40px;
+
+}
+
+#confirm_resa a {
+    text-decoration: none;
+    color: #348899;
+    text-align: center;
+}
+
+#confirm_resa p:last-of-type {
+    text-align: center;
+    margin-top: 20px;
+}
 
 
 /*------------------------------------------------   page détail - lightbox    ----------------------------------*/

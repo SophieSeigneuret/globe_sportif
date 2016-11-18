@@ -4,7 +4,7 @@
 /**************************************--  VALIDATION DU FORMULAIRE  --**************************************/
 
 const MIN_NB_CAR = 1;
-var forfait_voulu = forfaits[0];
+var forfait_voulu = forfaits[2];
 
 $(function () {
     console.log("DOM construit");
@@ -37,6 +37,16 @@ $(function () {
     /* CHANGEMENT VALEURS */
     changement_valeurs();  //
     formulaire.find(".selector").on("selectmenuchange", changement_valeurs);
+
+    /* MODAL BOX */
+    $(".modal_box_background").on("click", function () {
+        $(this).parent().fadeOut(100, function () {
+            $(this)
+                .find("mb_item")
+                .hide();
+        });
+    });
+
 });
 
 
@@ -45,12 +55,6 @@ $(function () {
 function valider_formulaire(event) {
     console.log("tentative de soumission");
     var formulaire_valide = true;  // par defaut on suppose que le form est valide
-    //var inputs_info = $("#infos_client input");
-    //inputs_info.each(function(){
-    //    $(this).removeClass("error");
-    //    $(this).next("error_msg").remove();
-    //});
-
 
     /* VALIDER LES CHAMPS INPUT DE TYPE TEXT */
     $(":text").not("#adresse").each(function () {
@@ -163,5 +167,17 @@ if (forfait_voulu.nbr_max_animaux_admis == 0) {
 }
 
 
-//montant_total = (montant_forfait * nb_participants) + (montant_animal * quantite_animaux);
+
+
+/**************************************--  MODAL BOX  --**************************************/
+
+$("#reserver").on("click", function(){
+       $("#confirm_resa")
+           .addClass("mb_item")
+           .show()
+           .parent()
+           .fadeIn(100);
+});
+
+
 
