@@ -29,10 +29,16 @@ function afficher_catalogue() {
             var li_item =
                 $('<li>')
 
-                    .append('<img src="' + forfait.photo + '" alt="photo forfait" />')
-                    .append('<h2>' + forfait.nom + '</h2>')
-                    .append('<p>' + forfait.description + '</p>')
-                    .append('<a href="reservation.html?forfait_id=' + index + '">Réserver</a>');
+                    .append('<a href="#"><img src="' + forfait.img_catalogue + '" alt="photo forfait" /></a>')
+                    .append('<div class="info_complet"><h2><a href="#">' + forfait.nom + '</a></h2></div>');
+                    $('<div class="info_forfait">')
+                        .appendTo(li_item.children('.info_complet'))
+                        .append('<div class = "lieu">' + forfait.ref_forfait + '<span class="numero">' + forfait.nb_forfait + ' </span></div></div>')
+                        .append('<p>' + forfait.info_cat + '</p>');
+                    $('<div class="contact">')
+                        .appendTo(li_item.children('.info_complet'))
+                        .append('<div><h4> "Prix par personne : $"' + forfait.prix + '</h4></div>')
+                        .append('<div><button class="bouton_cata"><a href="reservation.html?forfait_id=' + index + '">Réserver</a></button></div></div>');
 
 
             switch (forfait.categorie) {
