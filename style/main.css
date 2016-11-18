@@ -413,6 +413,24 @@ fieldset#resa_client input {
     color: #962d3e;
 }
 
+/* select number jQuery ui */
+#animaux {
+    margin-top: 20px;
+}
+
+#resa_client .ui-selectmenu-button.ui-button {
+    width: 6rem;
+    height: 30px;
+}
+
+#resa_client .ui-button.ui-state-active:hover {
+    border: none;
+    background-color: #348899;
+}
+
+#resa_client .ui-corner-all {
+    border-radius: 0;
+}
 
 
 
@@ -474,6 +492,57 @@ caption {
 }
 
 
+/* boutons submit */
+.bouton_submit:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #962d3e;
+}
+
+/* modal box confirmation de réservation */
+
+.modal_box_container {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
+    z-index: 100;
+}
+
+.modal_box_container > .modal_box_background {
+    display: block;
+    background-color: #343642;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#confirm_resa {
+    background-color: #ffffff;
+    display: none;
+    margin: 100px auto;
+    position: relative;
+    width: 50%;
+    padding: 40px;
+
+}
+
+#confirm_resa a {
+    text-decoration: none;
+    color: #348899;
+    text-align: center;
+}
+
+#confirm_resa p:last-of-type {
+    text-align: center;
+    margin-top: 20px;
+}
 
 
 /*------------------------------------------------   page détail - lightbox    ----------------------------------*/
@@ -573,27 +642,11 @@ caption {
     padding: 0 30px 30px;
 }
 
-/*#liste_onglets li {*/
-    /*display: inline-block;*/
-    /*border: 1px solid #343642;*/
-    /*background-color: #348899;*/
-    /*text-decoration: none;*/
-    /*border-radius: 5px 5px 0 0;*/
-/*}*/
-
 #liste_onglets li a:hover {
     background-color: #348899;
     color: #ffffff;
     border-radius: 5px 5px 0 0;
 }
-
-
-/*#liste_onglets li a {*/
-    /*text-decoration: none;*/
-    /*color: #ffffff;*/
-    /*display: block;*/
-    /*padding: 10px;*/
-/*}*/
 
 #onglets div {
     border: 1px solid rgba(151, 156, 156, 0.5);
@@ -613,15 +666,14 @@ caption {
     color: #348899;
 }
 
-/* ul */
-.ui-widget-header {
+/* onglets jQuery ui */
+#onglets .ui-widget-header {
     background-color: #ffffff;
     border: none;
 }
 
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
     background-color: #348899;
-    /*border-radius: 5px 5px 0 0;*/
     border: 1px solid #348899;
 }
 
@@ -633,9 +685,9 @@ caption {
     padding: 0;
 }
 
-.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+#onglets .ui-corner-all, #onglets .ui-corner-top, #onglets .ui-corner-right, #onglets .ui-corner-tr {
     border-top-right-radius: 8px;
 }
-.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+#onglets .ui-corner-all, #onglets .ui-corner-top, #onglets .ui-corner-left, #onglets .ui-corner-tl {
     border-top-left-radius: 8px;
 }
