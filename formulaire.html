@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Globe Sportif</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="style/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 </head>
@@ -23,7 +24,7 @@
             <input type="email" name="mail" id="mail" value=""/>
 
             <label for="phone">TÉLÉPHONE</label>
-            <input type="tel" name="phone" id="phone" value="" placeholder="(XXX) XXX-XX-XX"/>
+            <input type="tel" name="phone" id="phone" value="" placeholder="(XXX) XXX-XXXX"/>
 
             <label for="adresse">ADRESSE</label>
             <input type="text" name="adresse" id="adresse" value=""/>
@@ -38,16 +39,28 @@
         <fieldset id="resa_client">
             <legend>Votre réservation</legend>
 
-            <label for="date_debut">Date de début du forfait</label>
-            <input type="date" name="date_debut" id="date_debut" value=""/>
+            <label for="datepicker">Date de début du forfait</label>
+            <input type="text" name="date_debut" id="datepicker" value=""/>
 
             <label for="nb_participants">Nombre de participants</label>
-            <input type="number" name="nb_participants" id="nb_participants" value="1" min="1"/>
+            <select name="nb_participants" id="nb_participants" class="selector">
+                <option value="un">1</option>
+                <option value="deux">2</option>
+                <option value="trois">3</option>
+                <option value="quatre">4</option>
+                <option value="cinq">5</option>
+                <option value="six">6</option>
+                <option value="sept">7</option>
+                <option value="hui">8</option>
+                <option value="neuf">9</option>
+                <option value="dix">10</option>
+            </select>
+            <!--<input type="number" name="nb_participants" id="nb_participants" value="1" min="1"/>-->
 
             <div id="animaux">
                 <label for="nb_animaux">Nombre d'animaux</label>
                 <!--<input type="number" name="nb_animaux" id="nb_animaux" value="0" min="0" max="2"/>-->
-                <select name="nb_animaux" id="nb_animaux">
+                <select name="nb_animaux" id="nb_animaux" class="selector">
                     <option value="zero">0</option>
                     <option value="un">1</option>
                     <option value="deux">2</option>
@@ -66,18 +79,18 @@
             </thead>
             <tbody>
             <tr>
-                <td>nom forfait</td>
-                <td>nb pers.</td>
-                <td>prix unit</td>
+                <td id="nom_forfait">nom forfait</td>
+                <td id="nb_personnes">1</td>
+                <td id="prix_forfait">prix unit</td>
             </tr>
             <tr>
                 <td>Animal de compagnie</td>
-                <td>1</td>
-                <td>85 $</td>
+                <td id="nb_betes">0</td>
+                <td id="prix_animal">85 $</td>
             </tr>
             <tr>
                 <td colspan="2">Total</td>
-                <td>prix total $</td>
+                <td id="total"></td>
             </tr>
             </tbody>
         </table>

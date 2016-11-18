@@ -4,12 +4,42 @@
 /**************************************--  VALIDATION DU FORMULAIRE  --**************************************/
 
 const MIN_NB_CAR = 1;
+var forfait_voulu = forfaits[0];
 
 $(function () {
     console.log("DOM construit");
-    // brancher un listener sur l'evenement "submit" sur l,element <form>
-    $("#form_resa").on("submit", valider_formulaire);
+    var formulaire = $("#form_resa");
+    // brancher un listener sur l'evenement "submit" sur l'element <form>
+    formulaire.on("submit", valider_formulaire);
+
+    /* DATEPICKER */
+    // enlever le datepicker par défaut de Chrome
+    // $('input[type="date"]').attr('type','text');
+    // ajouter 1 jour au datepicker début et fin de saison
+    var min_date = new Date(forfaits[1].debut_saison);
+    min_date.setDate(min_date.getDate()+1);
+    var max_date = new Date(forfaits[1].fin_saison);
+    max_date.setDate(max_date.getDate()+1);
+    // rajout du datepicker jQuery
+    $("#datepicker").datepicker({
+        numberOfMonths: 2,
+        showButtonPanel: true,
+        minDate: min_date,
+        maxDate: max_date
+    });
+
+    /* SELECT NUMBER */
+    $("#nb_animaux, #nb_participants")
+        .selectmenu()
+        .selectmenu( "menuWidget" )
+        .addClass( "overflow" );
+
+    /* CHANGEMENT VALEURS */
+    changement_valeurs();  //
+    formulaire.find(".selector").on("selectmenuchange", changement_valeurs);
 });
+
+
 
 
 function valider_formulaire(event) {
@@ -69,54 +99,69 @@ function valider_formulaire(event) {
         champ_courriel.next(".error_msg").remove(); 
     }
 
+    /* VALIDER TELEPHONE */
+    function validation_tel(champ_tel) {
+        var re = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+        return re.test(champ_tel);
+    }
+
+    var champ_tel = $("#phone");
+    if (validation_tel(champ_tel.val()) == false) {
+        champ_tel.addClass("error");
+        if (!champ_tel.next().is(".error_msg")) {
+            champ_tel.after("<p class='error_msg'>Numéro invalide</p>");  // ajoute un paragraphe de message apres l'element input 
+        }
+        formulaire_valide = false;
+    } else {
+        champ_tel.removeClass("error");
+        champ_tel.next(".error_msg").remove();
+    }
+
+
     // EN CONCLUSION : on soumet ou pas
     if (!formulaire_valide) {
         event.preventDefault();  // empeche la soumission
     }
 }
 
+
+
+
+
 /**************************************--  CHANGEMENT VALEURS TABLEAU  --**************************************/
 
+function changement_valeurs() {
+    console.log("cette valeur a changé : " , this);
 
-/* nom du forfait s'affiche tout seul */
-var forfait_choisi = document.getElementById("recap").getElementsByTagName("tbody")[0].getElementsByTagName("tr")[0].getElementsByTagName("td")[0];
-console.log(forfait_choisi);
-//for (var i=0 ; i < forfaits.length ; i++) {
-//    forfait_choisi.textContent += forfaits.nom;
-//}
+    // quantité personnes (dans le tableau) = nb de participants selectionnés dans le menu déroulant
+    var selection_participants = $("#nb_participants option:selected").text();
+    $("#nb_personnes").html(selection_participants);
 
+    // quantité d'animaux (dans le tableau) = nb d'animaux selectionnés dans le menu déroulant
+    var selection_animaux = $("#nb_animaux option:selected").text();
+    $("#nb_betes").html(selection_animaux);
 
-/* changement nombre de participants */
-var nb_participants = document.getElementById("nb_participants").value;
-var quantite_participants = document.getElementById("recap").getElementsByTagName("tbody")[0].getElementsByTagName("tr")[0].getElementsByTagName("td")[1];
-quantite_participants.innerHTML = nb_participants;
-
-
-/* changement nombre d'animaux */
-var nb_animaux = document.getElementById("nb_animaux").getElementsByTagName("option").value;
-var quantite_animaux = document.getElementById("recap").getElementsByTagName("tbody")[0].getElementsByTagName("tr")[1].getElementsByTagName("td")[1];
-
-if (forfaits.nbr_max_animaux_admis > 0) {  // si le nb d'animaux admis est > à 0
-    quantite_animaux.innerHTML = nb_animaux.value;  // la quantité change
-} else {  // si le nombre d'animaux admis = 0 alors
-    var ligne_table_animaux = document.getElementById("recap").getElementsByTagName("tbody")[0].getElementsByTagName("tr")[1];
-    ligne_table_animaux.style.display = none;  //la ligne du tableau disparait
-    var resa_animaux = document.getElementById("animaux");
-    resa_animaux.style.display = none;   // la ligne réservation nb d'animaux disparait
+    /* changement montant total */
+    var somme = ((forfait_voulu.prix * selection_participants) + (forfait_voulu.prix_animal * selection_animaux));
+    $("#total").text(somme + " $");
+    console.log(somme);
 }
 
 
-/* changement prix du forfait */
-var montant_forfait = document.getElementById("recap").getElementsByTagName("tbody")[0].getElementsByTagName("tr")[0].getElementsByTagName("td")[2];
-montant_forfait.innerHTML = forfaits[1].prix + " $";
+/* nom du forfait, prix forfait et prix animal s'affichent tout seul */
+$("#nom_forfait").text(forfait_voulu.nom);
+$("#prix_forfait").text(forfait_voulu.prix + " $");
+$("#prix_animal").text(forfait_voulu.prix_animal + " $");
 
 
-/* changement prix animal */
-var montant_animal = document.getElementById("recap").getElementsByTagName("tbody")[0].getElementsByTagName("tr")[1].getElementsByTagName("td")[2];
-montant_animal.textContent = forfaits[1].prix_animal;
+/* disparition ligne d'animaux si nb animaux admis = 0 */
+if (forfait_voulu.nbr_max_animaux_admis == 0) {
+    var ligne_table_animaux = $("#recap tbody tr").eq(1);
+    ligne_table_animaux.hide();  //la ligne du tableau disparait
+    var resa_animaux = $("#animaux");
+    resa_animaux.hide();   // la ligne réservation nb d'animaux disparait
+}
 
 
-/* changement montant total */
-var montant_total = document.getElementById("recap").getElementsByTagName("tbody")[0].getElementsByTagName("tr")[2].getElementsByTagName("td")[1];
-montant_total = (montant_forfait * nb_participants) + (montant_animal * quantite_animaux);
+//montant_total = (montant_forfait * nb_participants) + (montant_animal * quantite_animaux);
 
