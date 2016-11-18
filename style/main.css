@@ -239,12 +239,35 @@ header ul li a:hover{
     overflow: auto;
 }
 #catalogue .accordion-content img {
-    display: block;
+    display: inline-block;
+    /*display: block;*/
     float: left;
-    margin: 0 15px 10px 0;
-    max-width: 100%;
+    /*margin: 0 15px 0 0;*/
+    width: 17%;
     height: auto;
+    vertical-align: top;
+
 }
+
+#catalogue p {
+    padding: 15px 0 0 30px;
+    /*padding-left: 30px;*/
+
+}
+
+
+.info_complet{
+    width: 83%;
+    padding-left: 30px;
+    /*background-color: #0088cc;*/
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+
+
 #catalogue .accordion-content ul{
     width: 100%;
     list-style:none;
@@ -252,19 +275,21 @@ header ul li a:hover{
 #catalogue .accordion-content ul li{
     margin:20px 0 20px 0;
     background:#f3f3f1;
-    min-height: 155px;
+    min-height: 150px;
 }
 #catalogue .accordion-content h2{
     font-size: 1.6rem;
-    padding: 15px 0 8px 0;
+    padding: 15px 0 0 0;
     font-weight: 400;
 }
 #catalogue .accordion-content h2 a{
     text-decoration: none;
+    /*padding-left: 30px;*/
     color: #952C3F;
+    /*border: 1px solid #000000;*/
 }
 #catalogue .accordion-content .info_forfait{
-    width: 55%;
+    width: 65%;
     display: inline-block;
     padding-top: 15px;
 }
@@ -274,6 +299,7 @@ header ul li a:hover{
     color: #388998;
     text-decoration: none;
     font-weight: 300;
+
 }
 #catalogue .accordion-content ul li .lieu .numero{
     font-size:0.8em;
@@ -289,23 +315,43 @@ header ul li a:hover{
     padding-top: 4px;
 }
 #catalogue .accordion-content .contact{
+    width: 30%;
+    /*margin-bottom: 30px;*/
     display: inline-block;
-    vertical-align: top;
+    /*vertical-align: top;*/
+    padding-left: 30px;
     /*border: 1px solid #000000;*/
-    margin-left: 50px;
+    /*margin-left: 50px;*/
 }
-.contact a{
+/*.contact a{*/
+    /*text-decoration: none;*/
+    /*color: #388998;*/
+    /*!*padding: 20px;*!*/
+    /*font-weight:300;*/
+    /*font-size: 1.2rem;*/
+/*}*/
+/*.contact a:hover{*/
+    /*color: #952C3F;*/
+/*}*/
+
+/**/
+.bouton_cata {
+    background-color: #962d3e;
+    padding: 10px;
+    border: none;
+    color: #ffffff;
+    margin: 15px 0 0;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.bouton_cata a{
+    color: #ffffff;
     text-decoration: none;
-    color: #388998;
-    padding: 20px;
-    font-weight:300;
-    font-size: 1.2rem;
-}
-.contact a:hover{
-    color: #952C3F;
 }
 
-
+.bouton_cata:hover {
+    background-color: #343642;
+}
 
 
 
@@ -633,6 +679,7 @@ caption {
 #bouton_retour:hover {
     color: #348899;
 }
+
 
 
 
