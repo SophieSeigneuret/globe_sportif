@@ -3,15 +3,14 @@
  */
 "use strict";
 
-
-// CREATION DES ONGLETS PAGE DETAIL
+// onglets page détail
 $( function() {
     $( "#onglets" ).tabs();
 } );
 
 
 // AJOUT DESCRIPTIF PAGE DETAIL
-var forfait_voulu = forfaits[2];
+var forfait_voulu = rechercher_descriptif_forfait("forfait_1");
 // photo forfait
 document.querySelector("#informations_forfait div:first-of-type").innerHTML = forfait_voulu.photo;
 // nom categorie
@@ -40,5 +39,4 @@ document.querySelector("#infos_pratiques p").innerHTML = forfait_voulu.infos;
 document.querySelector("#hebergement p").innerHTML = forfait_voulu.hebergement;
 // niveau
 document.querySelector("#niveau p").innerHTML = forfait_voulu.niveau;
-
 
