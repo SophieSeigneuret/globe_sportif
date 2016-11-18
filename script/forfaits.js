@@ -5,7 +5,7 @@ var forfaits = [
     {
         nom: "Tibau Do Sul (Brésil)",
         nb_forfait: "1",
-        ref_forfait: "Une côte exposée aux grandes houles",
+        ref_forfait: "Une côte exposée aux grandes houles pilar acosta",
         info_cat: "houles de l’Atlantique. Nous sommes au \"paradis des surfeurs\". Grâce à sa position houles de l’Atlantique. Nous sommes au \"paradis des surfeurs",
         categorie: "Destination Surf",
         lieu: "<ul><li>Une côte exposée aux grandes houles de l’Atlantique. Nous sommes au \"paradis des surfeurs\". Grâce à sa position géographique, le littoral de Rio Grande do Norte reçoit des alizés constants de sud-est.</li></ul>",
