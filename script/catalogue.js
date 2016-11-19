@@ -10,6 +10,10 @@ $(function(){
     // Est-ce qu'il y a un paramètre dans l'URL ?
     categorie_url = getParameterByName('categorie');
     console.log('Valeur de la categorie : ' , categorie_url);
+
+    if (-1 == categories.indexOf(categorie_url)) {
+        window.location.href = "index.html";
+    }
     afficher_catalogue();
 });
 
@@ -17,14 +21,14 @@ $(function(){
  * Sert à la page catalogue pour afficher le catalogue (par categorie)
  */
 function afficher_catalogue() {
-    var ul_forfaits_surf = $('#dest_surf'); // Le ul des forfaits nature
-    var ul_forfaits_sous_marins = $('#sous_marins'); // Le ul des forfaits croisieres
-    var ul_forfaits_snow = $('#snow_attitude'); // Le ul des forfaits sports hiver
-    var ul_forfaits_randonnee = $('#randonnee'); // Le ul des forfaits sports hiver
+    var ul_forfaits_surf = $('#dest_surf'); // Le ul des forfaits surf
+    var ul_forfaits_sous_marins = $('#sous_marins'); // Le ul des forfaits plongée
+    var ul_forfaits_snow = $('#snow_attitude'); // Le ul des forfaits snow
+    var ul_forfaits_randonnee = $('#randonnee'); // Le ul des forfaits rando
     // console.log(ul_forfaits_randonnee, ul_forfaits_snow, ul_forfaits_sous_marins, ul_forfaits_surf);
 
     jQuery.each(forfaits, function(index, forfait){
-        if ((null == categorie_url) || (forfait.categorie.toLowerCase() == categorie_url.toLowerCase())) {
+        //if ((null == categorie_url) || (forfait.categorie.toLowerCase() == categorie_url.toLowerCase())) {
             // console.log(index, forfait);
             var li_item =
                 $('<li>')
@@ -57,8 +61,7 @@ function afficher_catalogue() {
                 default:
                     console.log('Error categorie inconnue')
             }
-            // li_forfait_jQ.css('background-color','blue');
-        }
+        //}
     });
 }
 

@@ -22,22 +22,22 @@
 <section id="sec_menu_forfait">
     <div class="container">
         <ul>
-            <li>
-                <a href="#"> <img src="images/icons_01.png" alt=""/></a>
-                <p><a href="#">Loreum</a></p>
+            <li class="menu_surf">
+                <a href="catalogue.html?categorie=Destination%20Surf"> <img src="images/icons_01.png" alt=""/></a>
+                <p><a href="catalogue.html?categorie=Destination%20Surf">Destination Surf</a></p>
             </li><!--
-            --><li>
-                <a href="#"> <img src="images/icons_02.png" alt=""/></a>
-                <p><a href="#">Roreum</a></p>
-            </li><!--
-             --><li>
-                <a href="#"> <img src="images/icons3.png" alt=""/></a>
-                <p><a href="#">Soreume</a></p>
-            </li><!--
-             --><li>
-                <a href="#"> <img src="images/icons_04.png" alt=""/></a>
-                <p><a href="#">Poretum</a></p>
-            </li>
+            --><li class="menu_plongee">
+            <a href="catalogue.html?categorie=Espaces%20sous-marins"> <img src="images/icons_02.png" alt=""/></a>
+            <p><a href="catalogue.html?categorie=Espaces%20sous-marins">Espaces sous-marins</a></p>
+        </li><!--
+             --><li class="menu_snow">
+            <a href="catalogue.html?categorie=Snow%20attitude"> <img src="images/icons3.png" alt=""/></a>
+            <p><a href="catalogue.html?categorie=Snow%20attitude">Snow attitude</a></p>
+        </li><!--
+             --><li class="menu_rando">
+            <a href="catalogue.html?categorie=Randonn%C3%A9e%20et%20sac%20%C3%A0%20dos"> <img src="images/icons_04.png" alt=""/></a>
+            <p><a href="catalogue.html?categorie=Randonn%C3%A9e%20et%20sac%20%C3%A0%20dos">Randonnée et sac à dos</a></p>
+        </li>
         </ul>
     </div>
 </section>
@@ -48,7 +48,7 @@
             <div id="catalogue">
 <!---->
                 <div class="accordion-container"><!--son los nuevos-->
-                    <a href="#" class="accordion-toggle">Destination Surf <span class="toggle-icon"><i class="fa fa-plus-circle"></i></span></a>
+                    <a href="?categorie=Destination%20Surf" class="accordion-toggle">Destination Surf <span class="toggle-icon"><i class="fa fa-plus-circle"></i></span></a>
                     <div class="accordion-content"><!--son los nuevos-->
                         <ul id="dest_surf">
                            <li>
@@ -75,7 +75,7 @@
                 </div><!--/.accordion-container-->
 
                 <div class="accordion-container"><!--son los nuevos-->
-                    <a href="#" class="accordion-toggle">Espaces sous-marins<span class="toggle-icon"><i class="fa fa-plus-circle"></i></span></a>
+                    <a href="?categorie=Espaces%20sous-marins" class="accordion-toggle">Espaces sous-marins<span class="toggle-icon"><i class="fa fa-plus-circle"></i></span></a>
                     <div class="accordion-content"><!--son los nuevos-->
                         <ul id="sous_marins">
                         </ul>
@@ -83,7 +83,7 @@
                 </div><!--/.accordion-container-->
 
                 <div class="accordion-container"><!--son los nuevos-->
-                    <a href="#" class="accordion-toggle">Snow attitude<span class="toggle-icon"><i class="fa fa-plus-circle"></i></span></a>
+                    <a href="?categorie=Snow%20attitude" class="accordion-toggle">Snow attitude<span class="toggle-icon"><i class="fa fa-plus-circle"></i></span></a>
                     <div class="accordion-content"><!--son los nuevos-->
                         <ul id="snow_attitude">
                         </ul>
@@ -91,7 +91,7 @@
                 </div><!--/.accordion-container-->
 
                 <div class="accordion-container"><!--son los nuevos-->
-                    <a href="#" class="accordion-toggle">Randonnée et sac à dos<span class="toggle-icon"><i class="fa fa-plus-circle"></i></span></a>
+                    <a href="?categorie=Randonn%C3%A9e%20et%20sac%20%C3%A0%20dos" class="accordion-toggle">Randonnée et sac à dos<span class="toggle-icon"><i class="fa fa-plus-circle"></i></span></a>
                     <div class="accordion-content"><!--son los nuevos-->
                         <ul id="randonnee">
                         </ul>
@@ -114,10 +114,11 @@
 
         </div>
     </footer>
-<script src="script/forfaits.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="script/forfaits.js"></script>
 <script src="script/main_catalogue.js"></script>
 <script src="script/main_accordeon.js"></script>
 <script src="script/catalogue.js"></script>
+<script src="script/main.js"></script>
 </body>
 </html>

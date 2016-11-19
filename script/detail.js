@@ -10,7 +10,7 @@ $( function() {
 
 
 // AJOUT DESCRIPTIF PAGE DETAIL
-var forfait_voulu = rechercher_descriptif_forfait("forfait_1");
+var forfait_voulu = forfaits[1];
 // photo forfait
 document.querySelector("#informations_forfait div:first-of-type").innerHTML = forfait_voulu.photo;
 // nom categorie
