@@ -11,10 +11,27 @@ $(function(){
     categorie_url = getParameterByName('categorie');
     console.log('Valeur de la categorie : ' , categorie_url);
 
+    // redirection vers la page d'accueil si url non reconnu
     if (-1 == categories.indexOf(categorie_url)) {
         window.location.href = "index.html";
     }
+
     afficher_catalogue();
+
+    /* MODAL BOX */
+    $(".modal_box_background").on("click", function () {
+        $(this).parent().fadeOut(100, function () {
+            $(this)
+                .find("mb_item")
+                .hide();
+        });
+    });
+
+    // retour à la page catalogue depuis la page detail
+    //$("#bouton_retour").on("click", function () {
+    //    $("#page_detail").hide();
+    //    });
+
 });
 
 /**
@@ -28,13 +45,11 @@ function afficher_catalogue() {
     // console.log(ul_forfaits_randonnee, ul_forfaits_snow, ul_forfaits_sous_marins, ul_forfaits_surf);
 
     jQuery.each(forfaits, function(index, forfait){
-        //if ((null == categorie_url) || (forfait.categorie.toLowerCase() == categorie_url.toLowerCase())) {
-            // console.log(index, forfait);
             var li_item =
                 $('<li>')
 
-                    .append('<a href="#"><img src="' + forfait.img_catalogue + '" alt="photo forfait" /></a>')
-                    .append('<div class="info_complet"><h2><a href="#">' + forfait.nom + '</a></h2></div>');
+                    .append('<a id=\"'+index+'\" class="clic_detail" href="catalogue.html?forfait_id=' + index + '"><img src="' + forfait.img_catalogue + '" alt="photo forfait" /></a>')
+                    .append('<div class="info_complet"><h2><a id=\"'+index+'\" class="clic_detail" href="catalogue.html?forfait_id=' + index + '">' + forfait.nom + '</a></h2></div>');
                     $('<div class="info_forfait">')
                         .appendTo(li_item.children('.info_complet'))
                         .append('<div class = "lieu">' + forfait.ref_forfait + '<span class="numero">' + forfait.nb_forfait + ' </span></div></div>')
@@ -42,7 +57,7 @@ function afficher_catalogue() {
                     $('<div class="contact">')
                         .appendTo(li_item.children('.info_complet'))
                         .append('<div><h4> "Prix par personne : $"' + forfait.prix + '</h4></div>')
-                        .append('<div><button class="bouton_cata"><a href="reservation.html?forfait_id=' + index + '">Réserver</a></button></div></div>');
+                        .append('<div><button class="bouton_cata"><a id=\"'+index+'\" class="clic_detail" href="catalogue.html?forfait_id=' + index + '">Voir détail</a></button></div></div>');
 
 
             switch (forfait.categorie) {
@@ -61,7 +76,19 @@ function afficher_catalogue() {
                 default:
                     console.log('Error categorie inconnue')
             }
-        //}
+        console.log("Index ", index);
     });
+
+    /* affiche la modal box page detail */
+    $(".clic_detail").on("click", function (event){
+        event.preventDefault();
+        ecrire_detail($(this).attr("id"));  // ajoute la fonction ecrire_detail (sur detail.js) et attribue l'index pour ouvrir le bon forfait
+            $(".page_detail")
+                .addClass("mb_item")
+                .show()
+                .parent()
+                .fadeIn(100);
+    });
+
 }
 

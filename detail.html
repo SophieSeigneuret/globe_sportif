@@ -8,47 +8,46 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 </head>
 <body id="detail">
-<a href="#detail_forfait" id="lien_provisoire">lien forfait 1</a>
-<div id="detail_forfait" class="lightbox">
-
-
-
-    <div id="informations_forfait">
-
-        <h2></h2>
-        <div id="photo_forfait"></div>
-        <div id="descriptif">
-            <h3></h3>
-            <p>Du <span></span> au <span></span></p>
-            <p>Durée du séjour : <span></span> jours</p>
-            <p>Animaux autorisés : <span></span></p>
-            <p>Nombre de places restantes : <span></span></p>
-            <h4>Prix par personne : <span></span> $</h4>
-            <a href="formulaire.html">
-                <button id="bouton_resa">Réservez</button>
-            </a>
-            <a href="#detail" id="bouton_retour">Retour au catalogue</a>
+<!--<a href="#detail_forfait" id="lien_provisoire">lien forfait 1</a>-->
+<div id="detail_forfait" >
+    <div class="modal_box_background"></div>
+    <div class="page_detail">
+        <div id="informations_forfait">
+            <h2></h2>
+            <div id="photo_forfait"></div>
+            <div id="descriptif">
+                <h3></h3>
+                <p>Du <span></span> au <span></span></p>
+                <p>Durée du séjour : <span></span> jours</p>
+                <p>Animaux autorisés : <span></span></p>
+                <p>Nombre de places restantes : <span></span></p>
+                <h4>Prix par personne : <span></span> $</h4>
+                <a href="formulaire.html">
+                    <button id="bouton_resa">Réservez</button>
+                </a>
+                <a href="#detail" id="bouton_retour">Retour au catalogue</a>
+            </div>
         </div>
-    </div>
 
-    <div id="onglets">
-        <ul id="liste_onglets">
-            <li><a href="#le_lieu">Le lieu</a></li>
-            <li><a href="#infos_pratiques">Infos pratiques</a></li>
-            <li><a href="#hebergement">Hébergement</a></li>
-            <li><a href="#niveau">Niveau</a></li>
-        </ul>
-        <div id="le_lieu">
-            <p></p>
-        </div>
-        <div id="infos_pratiques">
-            <p></p>
-        </div>
-        <div id="hebergement">
-            <p></p>
-        </div>
-        <div id="niveau">
-            <p></p>
+        <div id="onglets">
+            <ul id="liste_onglets">
+                <li><a href="#le_lieu">Le lieu</a></li>
+                <li><a href="#infos_pratiques">Infos pratiques</a></li>
+                <li><a href="#hebergement">Hébergement</a></li>
+                <li><a href="#niveau">Niveau</a></li>
+            </ul>
+            <div id="le_lieu">
+                <p></p>
+            </div>
+            <div id="infos_pratiques">
+                <p></p>
+            </div>
+            <div id="hebergement">
+                <p></p>
+            </div>
+            <div id="niveau">
+                <p></p>
+            </div>
         </div>
     </div>
 </div>
@@ -56,5 +55,19 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="script/forfaits.js"></script>
 <script src="script/detail.js"></script>
+<script src="script/main.js"></script>
 </body>
 </html>
+
+
+
+<!--<div class="modal_box_container">-->
+    <!--<div class="modal_box_background"></div>-->
+    <!--<div id="confirm_resa">-->
+        <!--<h3>Merci d'avoir réservé avec Globe Sportif</h3>-->
+        <!--<p>Votre réservation a bien été enregistée</p>-->
+        <!--<p>Vous recevrez dans les prochaines minutes un courriel vous donnant le récapitulatif de votre réservation.</p>-->
+        <!--<p>A bientôt et bonnes vacances sportives !</p>-->
+        <!--<p><a href="index.html">Retour à la page d'accueil</a></p>-->
+    <!--</div>-->
+<!--</div>-->

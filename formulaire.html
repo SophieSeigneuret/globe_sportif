@@ -10,9 +10,11 @@
 <body>
 <div id="form_reservation">
     <h2>Réservation</h2>
-    <form action="" id="form_resa">
+    <form action="formulaire.html?validation=ok" id="form_resa">
         <fieldset id="infos_client">
             <legend>Vos informations</legend>
+
+            <input type="hidden" id="hide" name="hide" value=""/>
 
             <label for="nom">NOM</label>
             <input type="text" name="nom" id="nom" value=""/>
