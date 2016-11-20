@@ -7,6 +7,7 @@ const MIN_NB_CAR = 1;
 var forfait_id = getParameterByName('forfait_id');
 var forfait_voulu = forfaits[forfait_id];
 var formulaire_valide = true;  // par defaut on suppose que le form est valide
+var ischecked;
 
 $(function () {
     console.log("DOM construit");
@@ -47,6 +48,7 @@ $(function () {
         });
     });
 
+    // retour à la page d'accueil lorsqu'on clique sur annuler
     $("#annuler").on("click", function() {
         window.location.href = "index.html";
     });
@@ -166,7 +168,7 @@ $("#prix_forfait").text(forfait_voulu.prix + " $");
 $("#prix_animal").text(forfait_voulu.prix_animal + " $");
 
 
-/* disparition ligne d'animaux si nb animaux admis = 0 */
+// disparition ligne d'animaux si nb animaux admis égal 0
 if (forfait_voulu.nbr_max_animaux_admis == 0) {
     var ligne_table_animaux = $("#recap tbody tr").eq(1);
     ligne_table_animaux.hide();  //la ligne du tableau disparait
