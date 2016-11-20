@@ -604,14 +604,13 @@ caption {
     width: 100%;
 }
 
-#confirm_resa {
+#confirm_resa, .page_detail {
     background-color: #ffffff;
     display: none;
     margin: 100px auto;
     position: relative;
     width: 50%;
     padding: 40px;
-
 }
 
 #confirm_resa a {

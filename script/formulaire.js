@@ -4,7 +4,9 @@
 /**************************************--  VALIDATION DU FORMULAIRE  --**************************************/
 
 const MIN_NB_CAR = 1;
-var forfait_voulu = forfaits[2];
+var forfait_id = getParameterByName('forfait_id');
+var forfait_voulu = forfaits[forfait_id];
+var formulaire_valide = true;  // par defaut on suppose que le form est valide
 
 $(function () {
     console.log("DOM construit");
@@ -13,12 +15,10 @@ $(function () {
     formulaire.on("submit", valider_formulaire);
 
     /* DATEPICKER */
-    // enlever le datepicker par défaut de Chrome
-    // $('input[type="date"]').attr('type','text');
     // ajouter 1 jour au datepicker début et fin de saison
-    var min_date = new Date(forfaits[1].debut_saison);
+    var min_date = new Date(forfait_voulu.debut_saison);
     min_date.setDate(min_date.getDate()+1);
-    var max_date = new Date(forfaits[1].fin_saison);
+    var max_date = new Date(forfait_voulu.fin_saison);
     max_date.setDate(max_date.getDate()+1);
     // rajout du datepicker jQuery
     $("#datepicker").datepicker({
@@ -47,6 +47,10 @@ $(function () {
         });
     });
 
+    $("#annuler").on("click", function() {
+        window.location.href = "index.html";
+    });
+
 });
 
 
@@ -54,8 +58,8 @@ $(function () {
 
 function valider_formulaire(event) {
     console.log("tentative de soumission");
-    var formulaire_valide = true;  // par defaut on suppose que le form est valide
-
+    console.log("Event 1 = ", event);
+    formulaire_valide = true;
     /* VALIDER LES CHAMPS INPUT DE TYPE TEXT */
     $(":text").not("#adresse").each(function () {
         if ($(this).val().trim().length < MIN_NB_CAR) {
@@ -64,6 +68,7 @@ function valider_formulaire(event) {
             if (!$(this).next().is(".error_msg")) {
                 $(this).after("<p class='error_msg'>Champ obligatoire</p>");  // ajoute un paragraphe de message apres l'element input
             }
+            console.log("formulaire valide des inputs ");
             formulaire_valide = false;
         } else {
             $(this).removeClass("error");
@@ -78,6 +83,7 @@ function valider_formulaire(event) {
         if (!champ_adresse.next().is(".error_msg")) {
             champ_adresse.after("<p class='error_msg'>10 caractères min</p>");  // ajoute un paragraphe de message apres l'element input
         }
+        console.log("formulaire valide adresse ");
         formulaire_valide = false;
     } else {
         champ_adresse.removeClass("error");
@@ -96,7 +102,8 @@ function valider_formulaire(event) {
         champ_courriel.addClass("error");
         if (!champ_courriel.next().is(".error_msg")) {
             champ_courriel.after("<p class='error_msg'>Adresse invalide</p>");  // ajoute un paragraphe de message apres l'element input 
-        } 
+        }
+        console.log("formulaire valide mail ");
         formulaire_valide = false;
      } else {
         champ_courriel.removeClass("error"); 
@@ -115,6 +122,7 @@ function valider_formulaire(event) {
         if (!champ_tel.next().is(".error_msg")) {
             champ_tel.after("<p class='error_msg'>Numéro invalide</p>");  // ajoute un paragraphe de message apres l'element input 
         }
+        console.log("formulaire valide tel ");
         formulaire_valide = false;
     } else {
         champ_tel.removeClass("error");
@@ -171,13 +179,29 @@ if (forfait_voulu.nbr_max_animaux_admis == 0) {
 
 /**************************************--  MODAL BOX  --**************************************/
 
-$("#reserver").on("click", function(){
+$("#reserver").on("click", function (){
+    console.log("modal box");
+    if (formulaire_valide) {
        $("#confirm_resa")
            .addClass("mb_item")
            .show()
            .parent()
            .fadeIn(100);
+    }
 });
 
 
 
+// ouvrir la boite de dialogue seulement si tous les champs sont remplis
+//function soumission_formulaire (event) {
+//    console.log("test");
+//    valider_formulaire(event);
+//    console.log("le formulaire est-il valide ", formulaire_valide);
+//    if (formulaire_valide) {
+//        $("#confirm_resa")
+//            .addClass("mb_item")
+//            .show()
+//            .parent()
+//            .fadeIn(100);
+//    }
+//}

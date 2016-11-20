@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Globe sportif</title>
     <link rel="stylesheet" href="style/main.css"/>
+    <link rel="icon" type="image/gif" href="images/logo_icon.gif" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 </head>
 <body>
@@ -22,22 +23,22 @@
 <section id="sec_menu_forfait">
     <div class="container">
         <ul>
-            <li>
-                <a href="#"> <img src="images/icons_01.png" alt=""/></a>
-                <p><a href="#">Loreum</a></p>
+            <li class="menu_surf">
+                <a href="catalogue.html?categorie=Destination%20Surf"> <img src="images/icons_01.png" alt=""/></a>
+                <p><a href="catalogue.html?categorie=Destination%20Surf">Destination Surf</a></p>
             </li><!--
-            --><li>
-                <a href="#"> <img src="images/icons_02.png" alt=""/></a>
-                <p><a href="#">Roreum</a></p>
-            </li><!--
-             --><li>
-                <a href="#"> <img src="images/icons3.png" alt=""/></a>
-                <p><a href="#">Soreume</a></p>
-            </li><!--
-             --><li>
-                <a href="#"> <img src="images/icons_04.png" alt=""/></a>
-                <p><a href="#">Poretum</a></p>
-            </li>
+            --><li class="menu_plongee">
+            <a href="catalogue.html?categorie=Espaces%20sous-marins"> <img src="images/icons_02.png" alt=""/></a>
+            <p><a href="catalogue.html?categorie=Espaces%20sous-marins">Espaces sous-marins</a></p>
+        </li><!--
+             --><li class="menu_snow">
+            <a href="catalogue.html?categorie=Snow%20attitude"> <img src="images/icons3.png" alt=""/></a>
+            <p><a href="catalogue.html?categorie=Snow%20attitude">Snow attitude</a></p>
+        </li><!--
+             --><li class="menu_rando">
+            <a href="catalogue.html?categorie=Randonn%C3%A9e%20et%20sac%20%C3%A0%20dos"> <img src="images/icons_04.png" alt=""/></a>
+            <p><a href="catalogue.html?categorie=Randonn%C3%A9e%20et%20sac%20%C3%A0%20dos">Randonnée et sac à dos</a></p>
+        </li>
         </ul>
     </div>
 </section>
@@ -48,34 +49,34 @@
             <div id="catalogue">
 <!---->
                 <div class="accordion-container"><!--son los nuevos-->
-                    <a href="#" class="accordion-toggle">Destination Surf <span class="toggle-icon"><i class="fa fa-plus-circle"></i></span></a>
+                    <a href="?categorie=Destination%20Surf" class="accordion-toggle">Destination Surf <span class="toggle-icon"><i class="fa fa-plus-circle"></i></span></a>
                     <div class="accordion-content"><!--son los nuevos-->
                         <ul id="dest_surf">
-                           <li>
-                                <a href="#"> <img src="images/forf_02.jpg" alt=""/></a>
+                           <!--<li>-->
+                                <!--<a href="#"> <img src="images/forf_02.jpg" alt=""/></a>-->
 
-                               <div class="info_complet">
-                                    <h2><a href="#">Lorem Ipsum is simply dummy text</a></h2>
+                               <!--<div class="info_complet">-->
+                                    <!--<h2><a href="#">Lorem Ipsum is simply dummy text</a></h2>-->
 
-                                    <div class="info_forfait">
-                                        <div class="lieu">
-                                            <span class="numero">2</span>the printing and typesetting</div>
+                                    <!--<div class="info_forfait">-->
+                                        <!--<div class="lieu">-->
+                                            <!--<span class="numero">2</span>the printing and typesetting</div>-->
 
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                            been the industry's standard dummy text ever since the 1500s, when</p>
-                                    </div>
-                                    <div class="contact">
-                                        <h4>Prix par personne : <span></span> $</h4>
-                                        <button class="bouton_cata">Réservez</button>
-                                    </div>
-                               </div>
-                            </li>
+                                        <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has-->
+                                            <!--been the industry's standard dummy text ever since the 1500s, when</p>-->
+                                    <!--</div>-->
+                                    <!--<div class="contact">-->
+                                        <!--<h4>Prix par personne : <span></span> $</h4>-->
+                                        <!--<button class="bouton_cata">Réservez</button>-->
+                                    <!--</div>-->
+                               <!--</div>-->
+                            <!--</li>-->
                         </ul>
                     </div><!--/.accordion-content-->
                 </div><!--/.accordion-container-->
 
                 <div class="accordion-container"><!--son los nuevos-->
-                    <a href="#" class="accordion-toggle">Espaces sous-marins<span class="toggle-icon"><i class="fa fa-plus-circle"></i></span></a>
+                    <a href="?categorie=Espaces%20sous-marins" class="accordion-toggle">Espaces sous-marins<span class="toggle-icon"><i class="fa fa-plus-circle"></i></span></a>
                     <div class="accordion-content"><!--son los nuevos-->
                         <ul id="sous_marins">
                         </ul>
@@ -83,7 +84,7 @@
                 </div><!--/.accordion-container-->
 
                 <div class="accordion-container"><!--son los nuevos-->
-                    <a href="#" class="accordion-toggle">Snow attitude<span class="toggle-icon"><i class="fa fa-plus-circle"></i></span></a>
+                    <a href="?categorie=Snow%20attitude" class="accordion-toggle">Snow attitude<span class="toggle-icon"><i class="fa fa-plus-circle"></i></span></a>
                     <div class="accordion-content"><!--son los nuevos-->
                         <ul id="snow_attitude">
                         </ul>
@@ -91,7 +92,7 @@
                 </div><!--/.accordion-container-->
 
                 <div class="accordion-container"><!--son los nuevos-->
-                    <a href="#" class="accordion-toggle">Randonnée et sac à dos<span class="toggle-icon"><i class="fa fa-plus-circle"></i></span></a>
+                    <a href="?categorie=Randonn%C3%A9e%20et%20sac%20%C3%A0%20dos" class="accordion-toggle">Randonnée et sac à dos<span class="toggle-icon"><i class="fa fa-plus-circle"></i></span></a>
                     <div class="accordion-content"><!--son los nuevos-->
                         <ul id="randonnee">
                         </ul>
@@ -101,6 +102,52 @@
             </div>
         </div>
     </section>
+
+<!--     ***************************************     PAGE DETAIL - LIGHTBOX     ***********************************    -->
+
+<div id="detail_forfait" class="modal_box_container">
+    <div class="modal_box_background"></div>
+    <div class="page_detail">
+        <div id="informations_forfait">
+            <h2></h2>
+            <div id="photo_forfait"></div>
+            <div id="descriptif">
+                <h3></h3>
+                <p>Du <span></span> au <span></span></p>
+                <p>Durée du séjour : <span></span> jours</p>
+                <p>Animaux autorisés : <span></span></p>
+                <p>Nombre de places restantes : <span></span></p>
+                <h4>Prix par personne : <span></span> $</h4>
+                <a href="formulaire.html" id="vers_formulaire">
+                    <button id="bouton_resa">Réservez</button>
+                </a>
+                <a href="catalogue.html" id="bouton_retour">Retour au catalogue</a>
+            </div>
+        </div>
+
+        <div id="onglets">
+            <ul id="liste_onglets">
+                <li><a href="#le_lieu">Le lieu</a></li>
+                <li><a href="#infos_pratiques">Infos pratiques</a></li>
+                <li><a href="#hebergement">Hébergement</a></li>
+                <li><a href="#niveau">Niveau</a></li>
+            </ul>
+            <div id="le_lieu">
+                <p></p>
+            </div>
+            <div id="infos_pratiques">
+                <p></p>
+            </div>
+            <div id="hebergement">
+                <p></p>
+            </div>
+            <div id="niveau">
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!--     ***************************************     FOOTER PART MENU     ***********************************    -->
     <footer id="footer">
         <div class="container">
@@ -108,16 +155,19 @@
             <ul class="menu_prin"><!-- Laisser ces commentaires pour supprimer les caractères fins de ligne
 
                 --><li class="active"><a href="index.html">Forfaits</a></li><!--
-                --><li><a href="nous_joindre.html">Nous joindre</a></li><!--
-                --><li><a href="english.html">English</a></li>
+                --><li><a href="#">Nous joindre</a></li><!--
+                --><li><a href="#">English</a></li>
             </ul>
 
         </div>
     </footer>
-<script src="script/forfaits.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="script/main_catalogue.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="script/main.js"></script>
+
+<script src="script/forfaits.js"></script>
 <script src="script/main_accordeon.js"></script>
 <script src="script/catalogue.js"></script>
+<script src="script/detail.js"></script>
 </body>
 </html>
