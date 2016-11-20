@@ -3,104 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <title>Globe sportif</title>
-    <link rel="stylesheet" href="style/main.css"/>
+    <link rel="stylesheet" href="style/font-awesome.min.css"/><!--Font icons fleches slide-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css"/>
 </head>
+<!---->
 <body>
 <!--     ***************************************       HEADER       ************************************    -->
-    <header>
-        <div class="container"><!--container pour encadrer l`ìnformation (max-width: 1170px);-->
-            <img src="images/logo.png" alt="logo"/>
-            <ul class="menu_prin"><!-- Laisser ces commentaires pour supprimer les caractères fins de ligne
+<header>
+    <div class="container"><!--container pour encadrer l`ìnformation (max-width: 1170px);-->
+        <a href="index.html"><img src="images/logo.png" alt="logo"/></a>
+        <ul class="menu_prin"><!-- Laisser ces commentaires pour supprimer les caractères fins de ligne
                --><li class="active"><a href="catalogue.html">Catalogue</a></li><!--
                --><li><a href="#">Nous joindre</a></li><!--
                --><li><a href="#">English</a></li>
-            </ul>
-        </div>
-    </header>
+        </ul>
+    </div>
+</header>
 <!--     ***************************************       MENU FORFAIT       ************************************    -->
 <section id="sec_menu_forfait">
     <div class="container">
         <ul>
-            <li>
-                <a href="#"> <img src="images/icons_01.png" alt=""/></a>
-                <p><a href="#">Destination Surf</a></p>
+            <li class="menu_surf">
+                <a href="catalogue.html?categorie=Destination%20Surf"> <img src="images/icons_01.png" alt=""/></a>
+                <p><a href="catalogue.html?categorie=Destination%20Surf">Destination Surf</a></p>
             </li><!--
-            --><li>
-                <a href="#"> <img src="images/icons_02.png" alt=""/></a>
-                <p><a href="#">Espaces sous-marins</a></p>
-            </li><!--
-             --><li>
-                <a href="#"> <img src="images/icons3.png" alt=""/></a>
-                <p><a href="#">Snow attitude</a></p>
-            </li><!--
-             --><li>
-                <a href="#"> <img src="images/icons_04.png" alt=""/></a>
-                <p><a href="#">Randonnée et sac à dos</a></p>
-            </li>
+            --><li class="menu_plongee">
+            <a href="catalogue.html?categorie=Espaces%20sous-marins"> <img src="images/icons_02.png" alt=""/></a>
+            <p><a href="catalogue.html?categorie=Espaces%20sous-marins">Espaces sous-marins</a></p>
+        </li><!--
+             --><li class="menu_snow">
+            <a href="catalogue.html?categorie=Snow%20attitude"> <img src="images/icons3.png" alt=""/></a>
+            <p><a href="catalogue.html?categorie=Snow%20attitude">Snow attitude</a></p>
+        </li><!--
+             --><li class="menu_rando">
+            <a href="catalogue.html?categorie=Randonn%C3%A9e%20et%20sac%20%C3%A0%20dos"> <img src="images/icons_04.png" alt=""/></a>
+            <p><a href="catalogue.html?categorie=Randonn%C3%A9e%20et%20sac%20%C3%A0%20dos">Randonnée et sac à dos</a></p>
+        </li>
         </ul>
     </div>
 </section>
 <!--     ***************************************     SECTION CARROUSEL     ****************************    -->
-    <section id="carrousel">
-        <div class="slides">
-            <img src="images/banner_01.jpg">
-            <h1>Many desktop publishing packages</h1>
-        </div>
-    </section>
-<!--     ***************************************     SECTION INFO     ***********************************    -->
-    <section id="sec_info">
-        <div class="container">
-            <h2>Lorem Ipsum is simply dummy text</h2>
-            <p>Lorem Ipsum is simply ing versions of Lorem Ipsum.  here, content here', making it look like readable English.
-                Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
-                search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over
-                the years, sometimes by accident.</p>
-        </div>
-    </section>
-<!--     *************************************     SECTION FORFAITS     *****************************    -->
-    <section id="sec_nos_forfaits">
-        <div class="container">
-            <div id="forfaits"><!--Chaque image avec reference-->
-                <ul>
-                    <li>
-                        <img src="images/img_01.jpg" alt=""/>
-                        <h3>simply ing versions</h3>
-                    </li><!--
-                --><li>
-                        <img src="images/img_02.jpg" alt=""/>
-                        <h3>page editors now</h3>
-                </li><!--
-                --><li>
-                        <img src="images/img_03.jpg" alt=""/>
-                        <h3>default model text</h3>
-                </li><!--
-                --><li>
-                        <img src="images/img_04.jpg" alt=""/>
-                        <h3>making it look</h3>
-                </li><!--
+<!--<div class="contenedor" id="contenedor">-->
+    <!--<section class="tarjeta">-->
+    <section class="slider_banner">
+        <div class="banner" id="banner">
+            <img class = "slide active" src="images/slide_01.jpg" alt="">
 
+            <img class = "slide" src="images/slide_02.jpg" alt="">
+            <img class = "slide" src="images/slide_03.jpg" alt="">
+            <!--<h1>Many desktop publishing packages</h1>-->
+    </div>
+    <!--Fleches pour bougir les slides id para conectarnos con jquery-->
+    <a href="#" id="banner-prev" class="flecha-banner anterior"><span class="fa fa-chevron-left"></span></a>
+    <a href="#" id="banner-next" class="flecha-banner siguiente"><span class="fa fa-chevron-right"></span></a>
+</section>
+    <!--</section>-->
+<!--</div>-->
+<!--     ***************************************     SECTION INFO     ***********************************    -->
+<section id="sec_info">
+    <div class="container">
+        <h2>Lorem Ipsum is simply dummy text</h2>
+        <p>Lorem Ipsum is simply ing versions of Lorem Ipsum.  here, content here', making it look like readable English.
+            Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+            search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over
+            the years, sometimes by accident.</p>
+    </div>
+</section>
+<!--     *************************************     SECTION FORFAITS     *****************************    -->
+<section id="sec_nos_forfaits">
+    <div class="container">
+        <div id="forfaits"><!--Chaque image avec reference-->
+            <ul>
+                <li class="menu_surf slide">
+                    <div class="caption">
+                        <h5>Tibau Do Sul (Brésil)</h5>
+                        <p>Régularité et consistance des vagues lisses et tubulaires, quelles que soient leur...</p>
+                        <a href="catalogue.html?categorie=Destination%20Surf" class="bouton_cata">Réservez</a>
+                    </div>
+                    <img src="images/img_01.jpg" alt=""/>
+                    <h3>Destination Surf</h3>
+                </li><!--
+                --><li class="menu_plongee slide">
+                <div class="caption">
+                    <h5>Ski freerando Val d'Isère (France)</h5>
+                    <p>Dans un espace préservé immense, ce séjour est une invitation à découvrir... </p>
+                    <a href="catalogue.html?categorie=Espaces%20sous-marins" class="bouton_cata">Réservez</a>
+                </div>
+                <img src="images/img_02.jpg" alt=""/>
+                <h3>Snow attitude</h3>
+                </li><!--
+                 --><li class="menu_snow slide">
+                    <div class="caption">
+                        <h5>Mer d'Andaman (Thaïlande)</h5>
+                        <p>La plongée libre ou plongée en apnée vous permet de découvrir les... </p>
+                        <a href="catalogue.html?categorie=Snow%20attitude" class="bouton_cata">Réservez</a>
+                    </div>
+                    <img src="images/img_03.jpg" alt=""/>
+                    <h3>Espaces sous-marins</h3>
+                </li><!--
+                    --><li class="menu_rando slide">
+                    <div class="caption">
+                        <h5>Terre de feu (Patagonie)</h5>
+                        <p>Un grand voyage au bout du monde : 2 000 km de Ushuaia à El Calafate... </p>
+                        <a href="catalogue.html?categorie=Randonn%C3%A9e%20et%20sac%20%C3%A0%20dos" class="bouton_cata">Réservez</a>
+                    </div>
+                    <img src="images/img_04.jpg" alt=""/>
+                    <h3>Randonnée</h3>
+                </li><!--
             --></ul>
 
-            </div>
         </div>
-    </section>
+    </div>
+</section>
 <!--     ***************************************     FOOTER PART MENU     ***********************************    -->
-    <footer id="footer">
-        <div class="container">
-            <p>Copyright © 2016     Sophie - Pilar    Tous droits réservés.</p>
-            <ul class="menu_prin"><!-- Laisser ces commentaires pour supprimer les caractères fins de ligne
-
+<footer id="footer">
+    <div class="container">
+        <p>Copyright © 2016     Sophie - Pilar    Tous droits réservés.</p>
+        <ul class="menu_prin"><!-- Laisser ces commentaires pour supprimer les caractères fins de ligne
                 --><li class="active"><a href="index.html">Forfaits</a></li><!--
                 --><li><a href="nous_joindre.html">Nous joindre</a></li><!--
                 --><li><a href="english.html">English</a></li>
-            </ul>
-            <!--<div id="textcopy">-->
-                <!--<p>Copyright © 2016     Sophie - Pilar    Tous droits réservés.</p>-->
-            <!--</div>-->
+        </ul>
+        <!--<div id="textcopy">-->
+        <!--<p>Copyright © 2016     Sophie - Pilar    Tous droits réservés.</p>-->
+        <!--</div>-->
 
-        </div>
-    </footer>
-
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="script/forfaits.js"></script>
+<script src="script/index.js"></script>
 </body>
 </html>
