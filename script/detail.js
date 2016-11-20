@@ -18,6 +18,8 @@ function ecrire_detail(forfait_id) {
         // changement du lien du bouton réserver de la page détail pour avoir la bonne destination (bon forfait sur la page formulaire)
         $("#vers_formulaire").attr("href", "formulaire.html?forfait_id=" + forfait_id);
 
+        $("#bouton_retour").attr("href", "catalogue.html?categorie=" + forfait_voulu.categorie);
+
         // AJOUT DESCRIPTIF PAGE DETAIL
         // photo forfait
         document.querySelector("#informations_forfait div:first-of-type").innerHTML = forfait_voulu.photo;
