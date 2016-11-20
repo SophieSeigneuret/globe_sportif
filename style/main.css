@@ -99,22 +99,53 @@ header ul li a:hover{
     padding: 20px 0 0 70px;
 }
 /*------------------------------------------   section carrousel   --------------------------------*/
-#carrousel img {
-    margin:0 auto;
-    width: 100%;
-}
-.slides{
+
+.slider_banner {
+    overflow: hidden;
+    z-index: 1000;
     position: relative;
 }
-#carrousel h1 {/*titres slides*/
-    position: absolute;
-    font-size: 4rem;
-    font-weight: 200;
-    color: #FFFFFF;
-    top: 50%;
+.slider_banner .banner {
+    position: relative;
     width: 100%;
-    text-align: center;
 }
+.slider_banner .banner img {
+    vertical-align: top;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+.slider_banner .flecha-banner {
+    font-size: 50px;
+    line-height: 35px;
+    color: rgba(0,0,0,.4);
+
+    position: absolute;
+    top:40%;
+    z-index: 1100;
+}
+.slider_banner .flecha-banner:hover {
+    color: rgba(0,0,0,.6);
+}
+
+.slider_banner .flecha-banner.anterior {
+    left: 20px;
+}
+.slider_banner .flecha-banner.siguiente {
+    right: 20px;
+}
+.slider_banner h1 {/*titres slides*/
+position: absolute;
+font-size: 4rem;
+font-weight: 200;
+color: #FFFFFF;
+top: 50%;
+width: 100%;
+text-align: center;
+}
+
+
 /*-----------------------------------------------   Section info  ------------------------------------*/
 #sec_info{
     background-color:#fcfbf8;
@@ -159,16 +190,51 @@ header ul li a:hover{
 }
 #forfaits h3 {/*titres 4 images forfait*/
     text-align: center;
-    font-size: 1.5rem;
-    font-weight: 200;
+    font-size: 1.3rem;
+    font-weight: 300;
     text-transform: uppercase;
     position: absolute;
     top: 0;
     color: #FFFFFF;
     width: 100%;
-    padding: 60px;
-    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    /*background: rgba(0, 0, 0, 0.5);*/
+    background: rgba(149, 44, 63, 0.5);
 }
+
+/*style images forfaits slide*/
+
+.caption {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/trans-black-50.png);
+    width: 100%;
+    height: 100%;
+    padding: 130px 30px 0 30px;
+    text-align: center;
+}
+.caption h5 {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+ .caption p {
+    color: #CCCCCC;
+     font-size: .75em;
+     line-height: 1.5em;
+    padding-bottom: 20px;
+}
+.caption a {
+    font-size: .75em;
+    line-height: 1.5em;
+    margin: 50px 20px 15px;
+    margin-top: 100px;
+    text-decoration: none;
+}
+
 /*------------------------------------------------   Footer    ----------------------------------*/
 #footer{
     background-color:#343641;
@@ -246,16 +312,10 @@ header ul li a:hover{
     width: 17%;
     height: auto;
     vertical-align: top;
-
 }
-
 #catalogue p {
     padding: 15px 0 0 30px;
-    /*padding-left: 30px;*/
-
 }
-
-
 .info_complet{
     width: 83%;
     padding-left: 30px;
@@ -263,11 +323,6 @@ header ul li a:hover{
     display: inline-block;
     vertical-align: top;
 }
-
-
-
-
-
 #catalogue .accordion-content ul{
     width: 100%;
     list-style:none;
@@ -284,22 +339,18 @@ header ul li a:hover{
 }
 #catalogue .accordion-content h2 a{
     text-decoration: none;
-    /*padding-left: 30px;*/
     color: #952C3F;
-    /*border: 1px solid #000000;*/
 }
 #catalogue .accordion-content .info_forfait{
     width: 65%;
     display: inline-block;
     padding-top: 15px;
 }
-
 #catalogue .accordion-content ul li .lieu  {
     font-size: 1.2rem;
     color: #388998;
     text-decoration: none;
     font-weight: 300;
-
 }
 #catalogue .accordion-content ul li .lieu .numero{
     font-size:0.8em;
@@ -316,25 +367,9 @@ header ul li a:hover{
 }
 #catalogue .accordion-content .contact{
     width: 30%;
-    /*margin-bottom: 30px;*/
     display: inline-block;
-    /*vertical-align: top;*/
     padding-left: 30px;
-    /*border: 1px solid #000000;*/
-    /*margin-left: 50px;*/
 }
-/*.contact a{*/
-    /*text-decoration: none;*/
-    /*color: #388998;*/
-    /*!*padding: 20px;*!*/
-    /*font-weight:300;*/
-    /*font-size: 1.2rem;*/
-/*}*/
-/*.contact a:hover{*/
-    /*color: #952C3F;*/
-/*}*/
-
-/**/
 .bouton_cata {
     background-color: #962d3e;
     padding: 10px;
