@@ -4,7 +4,8 @@
 /**************************************--  VALIDATION DU FORMULAIRE  --**************************************/
 
 const MIN_NB_CAR = 1;
-var forfait_voulu = forfaits[2];
+var forfait_id = getParameterByName('forfait_id');
+var forfait_voulu = forfaits[forfait_id];
 var formulaire_valide = true;  // par defaut on suppose que le form est valide
 
 $(function () {
