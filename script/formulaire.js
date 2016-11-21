@@ -13,7 +13,7 @@ $(function () {
     console.log("DOM construit");
     var formulaire = $("#form_resa");
     // brancher un listener sur l'evenement "submit" sur l'element <form>
-    formulaire.on("submit", soumission_formulaire);
+    formulaire.on("submit", valider_formulaire);
 
     /* DATEPICKER */
     // ajouter 1 jour au datepicker début et fin de saison
@@ -134,10 +134,17 @@ function valider_formulaire(event) {
     }
 
 
+
     // EN CONCLUSION : on soumet ou pas
-    if (!formulaire_valide) {
-        event.preventDefault();  // empeche la soumission
-    }
+    if (formulaire_valide) {
+            $("#confirm_resa")
+                .addClass("mb_item")
+                .show()
+                .parent()
+                .fadeIn(100);
+        }
+    event.preventDefault();  // empeche la soumission
+
 }
 
 
@@ -183,6 +190,16 @@ if (forfait_voulu.nbr_max_animaux_admis == 0) {
 
 /**************************************--  MODAL BOX  --**************************************/
 
+//if (formulaire_valide) {
+//    ("#reserver").on("click", function () {
+//        $("#confirm_resa")
+//            .addClass("mb_item")
+//            .show()
+//            .parent()
+//            .fadeIn(100);
+//    });
+//}
+
 //$("#reserver").on("click", function (){
 //    console.log("modal box");
 //    if (formulaire_valide) {
@@ -196,16 +213,16 @@ if (forfait_voulu.nbr_max_animaux_admis == 0) {
 
 
 
-// ouvrir la boite de dialogue seulement si tous les champs sont remplis
-function soumission_formulaire (event) {
-    console.log("test");
-    valider_formulaire(event);
-    console.log("le formulaire est-il valide ", formulaire_valide);
-    if (formulaire_valide) {
-        $("#confirm_resa")
-            .addClass("mb_item")
-            .show()
-            .parent()
-            .fadeIn(100);
-    }
-}
+//// ouvrir la boite de dialogue seulement si tous les champs sont remplis
+//function soumission_formulaire (event) {
+//    console.log("test");
+//    valider_formulaire(event);
+//    console.log("le formulaire est-il valide ", formulaire_valide);
+//    if (formulaire_valide) {
+//        $("#confirm_resa")
+//            .addClass("mb_item")
+//            .show()
+//            .parent()
+//            .fadeIn(100);
+//    }
+//}

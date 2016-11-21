@@ -356,8 +356,9 @@ header ul li a:hover{
 }
 
 /*CHANGER CSS*/
-.ui-state-active{
-    background-color: #FF0000;
+#catalogue .ui-state-active{
+    width: 100%;
+    background-color: #348899;
     /*margin: 20px 0 20px;*/
 
 }
