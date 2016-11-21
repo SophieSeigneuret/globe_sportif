@@ -2,6 +2,11 @@
  * Created by acosta on 11/19/16.
  */
 
+$(function () {
+    console.log("jQuerry branche et DOM chargue");
+    // cacher_info();
+});
+
 /* ------------------------------    CARROUSEL   --------------------------  */
 
 
@@ -121,7 +126,20 @@ $(document).ready(function(){
     });
 });
 
+/* ------------------------------    INFORMATION SUR LES SLIDES   --------------------------  */
+function selectionner() {
+    console.log("elemento que necesito" , $(".info_slide").eq(1));
+}
 
+//
+// function cacher_info() {
+//
+// var carrousel = $("p.info_slide");
+// if (carrousel.is(":visible")){
+//     carrousel.hide(2000)
+//
+// }
+// }
 /* ------------------------------    IMAGES SLIDE AU BAS DE LA PAG   --------------------------  */
 
 $(document).ready(function() {
@@ -134,3 +152,7 @@ $(document).ready(function() {
         }
     );
 });
+
+
+
+
