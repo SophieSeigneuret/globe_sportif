@@ -520,7 +520,7 @@ fieldset#infos_client label {
     margin-left: 2%;
     text-align: left;
     display: inline-block;
-    width: 15%;
+    width: 25%;
     color: #343642;
 }
 
@@ -535,14 +535,15 @@ fieldset#resa_client label {
     margin-left: 2%;
     text-align: left;
     display: inline-block;
-    width: 22%;
+    width: 25%;
     color: #343642;
 }
 
 fieldset#resa_client input {
+    font-size: 0.9rem;
     height: 30px;
     margin: 0 10px 20px 0;
-    width: 58%;
+    width: 20%;
 }
 
 #resa_client select {
@@ -565,6 +566,11 @@ fieldset#resa_client input {
     padding-bottom: 50px;
 }
 
+.ui-datepicker-trigger {
+    border: none;
+    vertical-align: middle;
+    margin-right: 40%;
+}
 
 /* messages d'erreur */
 #form_resa .error {
@@ -572,8 +578,9 @@ fieldset#resa_client input {
 }
 
 #form_resa .error_msg {
-    display : inline-block;
-    margin:0;
+    display : block;
+    margin: -20px 0 20px 28%;
+    text-align: left;
     color: #962d3e;
 }
 
@@ -680,17 +687,19 @@ caption {
 .modal_box_container > .modal_box_background {
     display: block;
     background-color: #343642;
-    opacity: 0.8;
+    opacity: 0.9;
     position: absolute;
     top: 0;
     bottom: 0;
     width: 100%;
 }
 
+
+
 #confirm_resa, .page_detail {
     background-color: #ffffff;
     display: none;
-    margin: 100px auto;
+    margin: 40px auto;
     position: relative;
     width: 50%;
     padding: 40px;
@@ -709,6 +718,38 @@ caption {
 
 
 /*------------------------------------------------   page détail - lightbox    ----------------------------------*/
+
+
+/* carrousel page detail */
+#owl-demo .item img{
+    display: inline-block;
+    width: 50%;
+    height: auto;
+}
+
+#owl-demo {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.owl-carousel {
+    width: 50%;
+    display: inline-block;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    background: #869791 none repeat scroll 0 0;
+    border-radius: 20px;
+    display: block;
+    height: 8px;
+    margin: 0 7px;
+    opacity: 0.5;
+    width: 8px;
+}
+
+.owl-theme .owl-controls {
+    margin-top: 0;
+}
 
 .lightbox {
     display: none;
@@ -761,6 +802,7 @@ caption {
 
 /* titre forfait */
 #detail_forfait h3 {
+    font-size: 1.1rem;
     margin-bottom: 10px;
 }
 
@@ -770,13 +812,17 @@ caption {
     color: #962d3e;
 }
 
+#descriptif a {
+    text-decoration: none;
+}
+
 /* boutons */
 #bouton_resa {
     background-color: #962d3e;
     padding: 10px;
     border: none;
     color: #ffffff;
-    margin: 15px 0 0;
+    margin: 10px 0 0;
     font-size: 1rem;
     cursor: pointer;
 }
@@ -788,7 +834,8 @@ caption {
 #bouton_retour {
     font-size: 0.8rem;
     display: block;
-    margin-top: 18px;
+    margin-top: 10px;
+    vertical-align: bottom;
     color: #343642;
     text-decoration: none;
 }
