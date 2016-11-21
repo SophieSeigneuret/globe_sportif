@@ -25,7 +25,7 @@ $(document).ready(function(){
         banner.parent.css({
             'height': hauteur + 'px'
         });
-    }
+    };
     // Fonction execute pour calculer les hauteurs
     hauteur_banner();
 

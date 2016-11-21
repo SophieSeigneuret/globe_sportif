@@ -20,7 +20,9 @@ var forfaits = [
         nbr_max_animaux_admis: 1,
         prix_animal: 99,
         img_catalogue: "images/surf_tibau_do_sul_cat.jpg",
-        photo: "<img src='images/surf_tibau_do_sul.jpg' alt='photo surf Tibau do Sul' id='image_forfait'/>",
+        photo1: "<img src='images/surf_tibau_do_sul.jpg' alt='photo surf Tibau do Sul' id='image_forfait'/>",
+        photo2: "<img src='images/surf_tibau_do_sul_2.jpg' alt='photo surf Tibau do Sul' id='image_forfait'/>",
+        photo3: "<img src='images/surf_tibau_do_sul_3.jpg' alt='photo surf Tibau do Sul' id='image_forfait'/>",
         photo_cat: "images/categorie/nature.jpg"
     },
     {
@@ -41,7 +43,9 @@ var forfaits = [
         nbr_max_animaux_admis: 1,
         prix_animal: 156,
         img_catalogue: "images/surf_vauclin_cat.jpg",
-        photo: "<img src='images/surf_vauclin.jpg' alt='photo surf Le Vauclin' id='image_forfait'/>",
+        photo1: "<img src='images/surf_vauclin.jpg' alt='photo surf Le Vauclin' id='image_forfait'/>",
+        photo2: "<img src='images/surf_vauclin_2.jpg' alt='photo surf Le Vauclin' id='image_forfait'/>",
+        photo3: "<img src='images/surf_vauclin_3.jpg' alt='photo surf Le Vauclin' id='image_forfait'/>",
         photo_cat: "images/categorie/croisiere_01.jpg"
     },
     {
@@ -62,7 +66,9 @@ var forfaits = [
         nbr_max_animaux_admis: 2,
         prix_animal: 90,
         img_catalogue: "images/surf_fuerteventura_cat.jpg",
-        photo: "<img src='images/surf_fuerteventura.jpg' alt='photo surf Fuerteventura' id='image_forfait'/>",
+        photo1: "<img src='images/surf_fuerteventura.jpg' alt='photo surf Fuerteventura' id='image_forfait'/>",
+        photo2: "<img src='images/surf_fuerteventura_2.jpg' alt='photo surf Fuerteventura' id='image_forfait'/>",
+        photo3: "<img src='images/surf_fuerteventura_3.jpg' alt='photo surf Fuerteventura' id='image_forfait'/>",
         photo_cat: "images/categorie/croisiere_02.jpg"
     },
     {
@@ -83,7 +89,9 @@ var forfaits = [
         nbr_max_animaux_admis: 0,
         prix_animal: 0,
         img_catalogue: "images/plongee_les_saintes_cat.jpg",
-        photo: "<img src='images/plongee_les_saintes.jpg' alt='photo plongée Les Saintes' id='image_forfait'/>",
+        photo1: "<img src='images/plongee_les_saintes.jpg' alt='photo plongée Les Saintes' id='image_forfait'/>",
+        photo2: "<img src='images/plongee_les_saintes_2.jpg' alt='photo plongée Les Saintes' id='image_forfait'/>",
+        photo3: "<img src='images/plongee_les_saintes_3.jpg' alt='photo plongée Les Saintes' id='image_forfait'/>",
         photo_cat: "images/categorie/ours_02.jpg"
     },
     {
@@ -104,7 +112,9 @@ var forfaits = [
         nbr_max_animaux_admis: 0,
         prix_animal: 0,
         img_catalogue: "images/plongee_el_gouna_cat.jpg",
-        photo: "<img src='images/plongee_el_gouna.jpg' alt='photo plongée El Gouna' id='image_forfait'/>",
+        photo1: "<img src='images/plongee_el_gouna.jpg' alt='photo plongée El Gouna' id='image_forfait'/>",
+        photo2: "<img src='images/plongee_el_gouna_2.jpg' alt='photo plongée El Gouna' id='image_forfait'/>",
+        photo3: "<img src='images/plongee_el_gouna_3.jpg' alt='photo plongée El Gouna' id='image_forfait'/>",
         photo_cat: "images/categorie/tente.jpg"
     },
     {
@@ -125,7 +135,9 @@ var forfaits = [
         nbr_max_animaux_admis: 0,
         prix_animal: 0,
         img_catalogue: "images/plongee_andaman_cat.jpg",
-        photo: "<img src='images/plongee_andaman.jpg' alt='photo plongée Mer d'Andaman id='image_forfait'/>",
+        photo1: "<img src='images/plongee_andaman.jpg' alt='photo plongée Mer d'Andaman id='image_forfait'/>",
+        photo2: "<img src='images/plongee_andaman_2.jpg' alt='photo plongée Mer d'Andaman id='image_forfait'/>",
+        photo3: "<img src='images/plongee_andaman_3.jpg' alt='photo plongée Mer d'Andaman id='image_forfait'/>",
         photo_cat: "images/categorie/station_ski.jpg"
     },
     {
@@ -146,7 +158,9 @@ var forfaits = [
         nbr_max_animaux_admis: 0,
         prix_animal: 0,
         img_catalogue: "images/snow_freerando_cat.jpg",
-        photo: "<img src='images/snow_freerando.jpg' alt='photo snow Freerando' id='image_forfait'/>",
+        photo1: "<img src='images/snow_freerando.jpg' alt='photo snow Freerando' id='image_forfait'/>",
+        photo2: "<img src='images/snow_freerando_2.jpg' alt='photo snow Freerando' id='image_forfait'/>",
+        photo3: "<img src='images/snow_freerando_3.jpg' alt='photo snow Freerando' id='image_forfait'/>",
         photo_cat: "images/categorie/ski.jpg"
     },
     {
@@ -167,7 +181,9 @@ var forfaits = [
         nbr_max_animaux_admis: 1,
         prix_animal: 105,
         img_catalogue: "images/snow_hors_piste_cat.jpg",
-        photo: "<img src='images/snow_hors_piste.jpg' alt='photo snow hors piste' id='image_forfait'/>",
+        photo1: "<img src='images/snow_hors_piste.jpg' alt='photo snow hors piste' id='image_forfait'/>",
+        photo2: "<img src='images/snow_hors_piste_2.jpg' alt='photo snow hors piste' id='image_forfait'/>",
+        photo3: "<img src='images/snow_hors_piste_3.jpg' alt='photo snow hors piste' id='image_forfait'/>",
         photo_cat: "images/categorie/lac_louise.jpg"
     },
     {
@@ -188,7 +204,9 @@ var forfaits = [
         nbr_max_animaux_admis: 2,
         prix_animal: 100,
         img_catalogue: "images/snow_chien_traineau_cat.jpg",
-        photo: "<img src='images/snow_chien_traineau.jpg' alt='photo snow Chiens de traineau' id='image_forfait'/>",
+        photo1: "<img src='images/snow_chien_traineau.jpg' alt='photo snow Chiens de traineau' id='image_forfait'/>",
+        photo2: "<img src='images/snow_chien_traineau_2.jpg' alt='photo snow Chiens de traineau' id='image_forfait'/>",
+        photo3: "<img src='images/snow_chien_traineau_3.jpg' alt='photo snow Chiens de traineau' id='image_forfait'/>",
         photo_cat: "images/categorie/lac_moraine.jpg"
     },
     {
@@ -209,7 +227,9 @@ var forfaits = [
         nbr_max_animaux_admis: 1,
         prix_animal: 90,
         img_catalogue: "images/rando_patagonie_cat.jpg",
-        photo: "<img src='images/rando_patagonie.jpg' alt='photo randonnée Patagonie' id='image_forfait'/>",
+        photo1: "<img src='images/rando_patagonie.jpg' alt='photo randonnée Patagonie' id='image_forfait'/>",
+        photo2: "<img src='images/rando_patagonie_2.jpg' alt='photo randonnée Patagonie' id='image_forfait'/>",
+        photo3: "<img src='images/rando_patagonie_3.jpg' alt='photo randonnée Patagonie' id='image_forfait'/>",
         photo_cat: "images/categorie/Caribou.jpg"
     },
     {
@@ -230,7 +250,9 @@ var forfaits = [
         nbr_max_animaux_admis: 2,
         prix_animal: 80,
         img_catalogue: "images/rando_maroc_cat.jpg",
-        photo: "<img src='images/rando_maroc.jpg' alt='photo randonnée Maroc' id='image_forfait'/>",
+        photo1: "<img src='images/rando_maroc.jpg' alt='photo randonnée Maroc' id='image_forfait'/>",
+        photo2: "<img src='images/rando_maroc_2.jpg' alt='photo randonnée Maroc' id='image_forfait'/>",
+        photo3: "<img src='images/rando_maroc_3.jpg' alt='photo randonnée Maroc' id='image_forfait'/>",
         photo_cat: "images/categorie/aventure_01.jpg"
     },
     {
@@ -251,7 +273,9 @@ var forfaits = [
         nbr_max_animaux_admis: 0,
         prix_animal: 0,
         img_catalogue: "images/rando_pyramides_mayas_cat.jpg",
-        photo: "<img src='images/rando_pyramides_mayas.jpg' alt='photo randonnée pyramides Mayas' id='image_forfait'/>",
+        photo1: "<img src='images/rando_pyramides_mayas.jpg' alt='photo randonnée pyramides Mayas' id='image_forfait'/>",
+        photo2: "<img src='images/rando_pyramides_mayas_2.jpg' alt='photo randonnée pyramides Mayas' id='image_forfait'/>",
+        photo3: "<img src='images/rando_pyramides_mayas_3.jpg' alt='photo randonnée pyramides Mayas' id='image_forfait'/>",
         photo_cat: "images/categorie/iceberg_02.jpg"
     }
 ];

@@ -17,12 +17,14 @@ function ecrire_detail(forfait_id) {
     function initialisation_detail() {
         // changement du lien du bouton réserver de la page détail pour avoir la bonne destination (bon forfait sur la page formulaire)
         $("#vers_formulaire").attr("href", "formulaire.html?forfait_id=" + forfait_id);
-
+        // bouton retour à la page catalogue (page détail)
         $("#bouton_retour").attr("href", "catalogue.html?categorie=" + forfait_voulu.categorie);
 
         // AJOUT DESCRIPTIF PAGE DETAIL
         // photo forfait
-        document.querySelector("#informations_forfait div:first-of-type").innerHTML = forfait_voulu.photo;
+        document.querySelector("#photo1_forfait").innerHTML = forfait_voulu.photo1;
+        document.querySelector("#photo2_forfait").innerHTML = forfait_voulu.photo2;
+        document.querySelector("#photo3_forfait").innerHTML = forfait_voulu.photo3;
         // nom categorie
         document.querySelector("#informations_forfait h2").textContent = forfait_voulu.categorie.toUpperCase();
         // nom forfait
@@ -52,6 +54,29 @@ function ecrire_detail(forfait_id) {
     }
 
     initialisation_detail();
-
-
 }
+
+
+
+
+$(document).ready(function() {
+
+    $("#owl-demo").owlCarousel({
+
+        navigation : true, // Show next and prev buttons
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem:true
+
+        // "singleItem:true" is a shortcut for:
+        // items : 1,
+        // itemsDesktop : false,
+        // itemsDesktopSmall : false,
+        // itemsTablet: false,
+        // itemsMobile : false
+
+    });
+
+});
+
+

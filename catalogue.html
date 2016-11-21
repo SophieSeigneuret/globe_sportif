@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Globe sportif</title>
+    <link rel="stylesheet" href="style/owl.carousel.css">
+    <link rel="stylesheet" href="style/owl.theme.css">
     <link rel="stylesheet" href="style/main.css"/>
     <link rel="icon" type="image/gif" href="images/logo_icon.gif" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
@@ -110,7 +112,11 @@
     <div class="page_detail">
         <div id="informations_forfait">
             <h2></h2>
-            <div id="photo_forfait"></div>
+            <div id="owl-demo" class="owl-carousel owl-theme" style="display: inline-block;">
+                <div id="photo1_forfait"></div>
+                <div id="photo2_forfait"></div>
+                <div id="photo3_forfait"></div>
+            </div>
             <div id="descriptif">
                 <h3></h3>
                 <p>Du <span></span> au <span></span></p>
@@ -164,7 +170,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="script/main.js"></script>
-
+<script src="script/owl.carousel.js"></script>
 <script src="script/forfaits.js"></script>
 <script src="script/main_accordeon.js"></script>
 <script src="script/catalogue.js"></script>
