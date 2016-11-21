@@ -832,17 +832,36 @@ caption {
 }
 
 #liste_onglets li a:hover {
+    padding: 10px;
     background-color: #348899;
     color: #ffffff;
     border-radius: 5px 5px 0 0;
+}
+
+#liste_onglets li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid rgba(151, 156, 156, 0.5);
 }
 
 #onglets div {
     border: 1px solid rgba(151, 156, 156, 0.5);
     /*border-radius: 0 0 5px 5px;*/
     padding: 10px;
-    /*position: relative;*/
-    /*bottom: 1px;*/
+    position: relative;
+    bottom: 1px;
+}
+
+.ui-tabs-anchor:not(.ui-state-active)
+{
+    color: red;
+}
+
+#liste_onglets li a {
+    padding: 10px;
+    text-decoration: none;
+    color: #343642;
 }
 
 #le_lieu li, #infos_pratiques li, #hebergement li, #niveau li {
@@ -850,29 +869,37 @@ caption {
     color: #343642;
 }
 
-#infos_pratiques a  {
+#le_lieu a, #infos_pratiques a, #hebergement a, #niveau a  {
     text-decoration: none;
     color: #348899;
 }
 
 /* onglets jQuery ui */
+
+#onglets li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-state-hover {
+    color: #ffffff;
+    background-color: #348899;
+}
+
 #onglets .ui-widget-header {
     background-color: #ffffff;
     border: none;
 }
 
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+a.ui-state-active,.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    color: #ffffff;
     background-color: #348899;
     border: 1px solid #348899;
+    display: inline-block;
 }
 
 .ui-widget.ui-widget-content {
     border: none;
 }
 
-.ui-tabs .ui-tabs-nav{
-    padding: 0;
-}
+/*.ui-tabs .ui-tabs-nav{*/
+    /*padding: 0;*/
+/*}*/
 
 #onglets .ui-corner-all, #onglets .ui-corner-top, #onglets .ui-corner-right, #onglets .ui-corner-tr {
     border-top-right-radius: 8px;
