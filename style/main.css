@@ -17,8 +17,6 @@ body {
     margin:0 auto;
 }
 
-
-
 /*------------------------------   Container (centre la page)    ---------------------*/
 .container {
     max-width: 1170px;
@@ -126,7 +124,7 @@ header ul li a:hover{
     z-index: 1100;
 }
 .slider_banner .flecha-banner:hover {
-    color: rgba(0,0,0,.6);
+    color: rgba(255,255,255,.6);
 }
 
 .slider_banner .flecha-banner.anterior {
@@ -136,15 +134,36 @@ header ul li a:hover{
     right: 20px;
 }
 .slider_banner h1 {/*titres slides*/
-position: absolute;
-font-size: 4rem;
-font-weight: 200;
-color: #FFFFFF;
-top: 50%;
-width: 100%;
-text-align: center;
+    font-size: 1.7rem;
+    font-weight: 200;
+    color: #FFFFFF;
+    top: 50%;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 15px;
 }
-
+.slider_banner p {/*titres slides*/
+    font-size: 1rem;
+    font-weight: 200;
+    color: #FFFFFF;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.slider_banner a {/*titres slides*/
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.info_slide{
+    position: absolute;
+    width: inherit;
+    background: url(../images/trans-black-50.png);
+    top: 0;
+    margin: 20px 0 0 50px;
+    padding: 15px;
+    text-align: center;
+}
 
 /*-----------------------------------------------   Section info  ------------------------------------*/
 #sec_info{
@@ -188,8 +207,9 @@ text-align: center;
     vertical-align: top;
     position:relative;/*conteneur pour placer textes*/
 }
-#forfaits h3 {/*titres 4 images forfait*/
+#forfaits h5 {/*titres 4 images forfait*/
     text-align: center;
+    /*margin-left: -30px;*/
     font-size: 1.3rem;
     font-weight: 300;
     text-transform: uppercase;
@@ -201,6 +221,7 @@ text-align: center;
     /*background: rgba(0, 0, 0, 0.5);*/
     background: rgba(149, 44, 63, 0.5);
 }
+
 
 /*style images forfaits slide*/
 
@@ -215,14 +236,15 @@ text-align: center;
     padding: 130px 30px 0 30px;
     text-align: center;
 }
-.caption h5 {
+.caption h6 {
     font-size: 1.5rem;
     color: #FFFFFF;
     font-weight: 200;
     margin-bottom: 20px;
 }
  .caption p {
-    color: #CCCCCC;
+    color: #FFFFFF;
+     font-weight: 200;
      font-size: .75em;
      line-height: 1.5em;
     padding-bottom: 20px;
@@ -269,11 +291,97 @@ text-align: center;
 
 
 /*------------------------------------------------   page forfaits    ----------------------------------*/
+.accordion
+{
+    max-width: 300px;
+    /*margin: 20px auto;*/
+    margin-bottom: 20px;
+}
+.ui-accordion{
+    margin: 10px 0 20px 0;
+    /*border: 1px solid #FF0000;*/
+}
+
+.drawer
+{
+    width:100%;
+    border-radius:3px;
+}
+.accordion-item
+{
+    /*border-bottom:1px solid #E0E0E0;*/
+}
+.accordion-item-active .accordion-header
+{
+    background:#388998;
+    transition:.25s;
+}
+.accordion-item-active .accordion-header-icon
+{
+    color:#fff;
+}
+.accordion-item-active .accordion-header h1
+{
+    color:#fff;
+}
+.accordion-header {
+    background:#f2f2f2;
+    cursor:pointer;
+    transition:.25s;
+}
+.accordion-header h1 {
+    float:left;
+    font-size:18px;
+    font-weight: normal;
+    margin:0;
+    line-height: 1.3em;
+    color:#FFFFFF;
+}
+.accordion-content p {
+    margin:0;
+    margin-bottom: 3px;
+}
+.accordion-header-icon {
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    float:right;
+    color: #ffffff;
+    font-size: 15px;
+    vertical-align: middle;
+}
+.accordion-header-icon.accordion-header-icon-active {
+    -webkit-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform:rotate(180deg);
+    color:#fff;
+}
+
+/*CHANGER CSS*/
+.ui-state-active{
+    background-color: #FF0000;
+    /*margin: 20px 0 20px;*/
+
+}
+.ui-accordion .ui-widget.ui-helper-reset{
+    background-color: #00FFFF;
+}
 
 
+.ui-accordion-header{
+    cursor:pointer;
+    font-size: 1.2rem;
+    font-weight: 300;
+    background-color: #979C9C;
+    padding: 15px;
+    margin-top: 10px;
+    color: #FFFFFF;
+}
+
+
+
+/*styles content */
 #catalogue .accordion-container {
     width: 100%;
-    margin: 20px 0 20px;
+   margin-bottom: 15px;
     clear: both;
 }
 #catalogue .accordion-toggle {
@@ -301,20 +409,19 @@ text-align: center;
 }
 #catalogue .accordion-content {
     display: none;
-    /*padding: 20px;*/
     overflow: auto;
 }
 #catalogue .accordion-content img {
     display: inline-block;
-    /*display: block;*/
     float: left;
-    /*margin: 0 15px 0 0;*/
     width: 17%;
     height: auto;
     vertical-align: top;
 }
 #catalogue p {
-    padding: 15px 0 0 30px;
+    padding: 15px 0 0 0;
+    font-size: 0.8rem;
+    font-weight: 400;
 }
 .info_complet{
     width: 83%;
@@ -369,6 +476,7 @@ text-align: center;
     width: 30%;
     display: inline-block;
     padding-left: 30px;
+    text-align: center;
 }
 .bouton_cata {
     background-color: #962d3e;
