@@ -65,7 +65,7 @@ function valider_formulaire(event) {
     console.log("Event 1 = ", event);
     formulaire_valide = true;
     /* VALIDER LES CHAMPS INPUT DE TYPE TEXT */
-    $(":text").not("#adresse").each(function () {
+    $(":text").not("#adresse").not("#datepicker").each(function () {
         if ($(this).val().trim().length < MIN_NB_CAR) {
             $(this).addClass("error");  // ajoute la classe error
             console.log("this : ", this);
@@ -133,6 +133,18 @@ function valider_formulaire(event) {
         champ_tel.next(".error_msg").remove();
     }
 
+    ///* VALIDER DATEPICKER */
+    //var champ_datepicker = $("#datepicker");
+    //    if (champ_datepicker.val().trim().length < MIN_NB_CAR) {
+    //        champ_datepicker.addClass("error");  // ajoute la classe error
+    //        if (!champ_datepicker.next().is(".error_msg")) {
+    //            champ_datepicker.after("<p class='error_msg'>Champ obligatoire</p>");  // ajoute un paragraphe de message apres l'element input
+    //        }
+    //        formulaire_valide = false;
+    //    } else {
+    //        champ_datepicker.removeClass("error");
+    //        champ_datepicker.next(".error_msg").remove();
+    //    }
 
 
     // EN CONCLUSION : on soumet ou pas
