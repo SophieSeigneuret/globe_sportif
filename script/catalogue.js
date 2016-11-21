@@ -92,3 +92,8 @@ function afficher_catalogue() {
 
 }
 
+//*********************************************   function accordeon
+
+$( function() {
+    $( "#accordion" ).accordion();
+} );
