@@ -209,7 +209,6 @@ header ul li a:hover{
 }
 #forfaits h5 {/*titres 4 images forfait*/
     text-align: center;
-    /*margin-left: -30px;*/
     font-size: 1.3rem;
     font-weight: 300;
     text-transform: uppercase;
@@ -218,13 +217,9 @@ header ul li a:hover{
     color: #FFFFFF;
     width: 100%;
     padding: 30px;
-    /*background: rgba(0, 0, 0, 0.5);*/
     background: rgba(149, 44, 63, 0.5);
 }
-
-
 /*style images forfaits slide*/
-
 .caption {
     display: none;
     position: absolute;
@@ -291,37 +286,26 @@ header ul li a:hover{
 
 
 /*------------------------------------------------   page forfaits    ----------------------------------*/
-.accordion
-{
+.accordion {
     max-width: 300px;
     /*margin: 20px auto;*/
     margin-bottom: 20px;
 }
 .ui-accordion{
     margin: 10px 0 20px 0;
-    /*border: 1px solid #FF0000;*/
 }
-
-.drawer
-{
+.drawer {
     width:100%;
     border-radius:3px;
 }
-.accordion-item
-{
-    /*border-bottom:1px solid #E0E0E0;*/
-}
-.accordion-item-active .accordion-header
-{
+.accordion-item-active .accordion-header {
     background:#388998;
     transition:.25s;
 }
-.accordion-item-active .accordion-header-icon
-{
+.accordion-item-active .accordion-header-icon {
     color:#fff;
 }
-.accordion-item-active .accordion-header h1
-{
+.accordion-item-active .accordion-header h1 {
     color:#fff;
 }
 .accordion-header {
@@ -354,7 +338,6 @@ header ul li a:hover{
     transform:rotate(180deg);
     color:#fff;
 }
-
 /*CHANGER CSS*/
 #catalogue .ui-state-active{
     width: 100%;
@@ -365,8 +348,6 @@ header ul li a:hover{
 .ui-accordion .ui-widget.ui-helper-reset{
     background-color: #00FFFF;
 }
-
-
 .ui-accordion-header{
     cursor:pointer;
     font-size: 1.2rem;
@@ -376,9 +357,12 @@ header ul li a:hover{
     margin-top: 10px;
     color: #FFFFFF;
 }
-
-
-
+.ui-accordion-header a{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-decoration: none;
+}
 /*styles content */
 #catalogue .accordion-container {
     width: 100%;
@@ -427,7 +411,6 @@ header ul li a:hover{
 .info_complet{
     width: 83%;
     padding-left: 30px;
-    /*background-color: #0088cc;*/
     display: inline-block;
     vertical-align: top;
 }
@@ -492,13 +475,9 @@ header ul li a:hover{
     color: #ffffff;
     text-decoration: none;
 }
-
 .bouton_cata:hover {
     background-color: #343642;
 }
-
-
-
 
 
 

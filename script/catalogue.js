@@ -32,6 +32,30 @@ $(function(){
     //    $("#page_detail").hide();
     //    });
 
+    //*********************************************   function accordeon
+    var num_categorie = 0;
+    switch (categorie_url){
+        case "Destination Surf":
+            num_categorie = 0;
+            break;
+        case "Espaces sous-marins":
+            num_categorie = 1;
+            break;
+        case "Snow attitude":
+            num_categorie = 2;
+            break;
+        case "Randonnée et sac à dos":
+            num_categorie = 3;
+            break;
+        default:
+            num_categorie = 0;
+    }
+
+    $( "#accordion" ).accordion({
+        active: num_categorie
+    });
+
+
 });
 
 /**
@@ -92,8 +116,5 @@ function afficher_catalogue() {
 
 }
 
-//*********************************************   function accordeon
 
-$( function() {
-    $( "#accordion" ).accordion();
-} );
+
