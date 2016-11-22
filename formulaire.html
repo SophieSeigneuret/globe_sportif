@@ -9,8 +9,17 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 </head>
 <body>
-<div id="form_reservation">
-    <h2>Réservation</h2>
+<header>
+    <div class="container_form"><!--container pour encadrer l`ìnformation (max-width: 1170px);-->
+        <a href="index.html"><img src="images/logo.png" alt="logo"/></a>
+        <h1>Réservation</h1>
+    </div>
+</header>
+<section id="form_reservation">
+    <!--<div id="entete">-->
+        <!--<img src="images/logo.png" alt="logo Globe Sportif" id="logo"/>-->
+        <!--<h2>Réservation</h2>-->
+    <!--</div>-->
     <form action="formulaire.html?validation=ok" id="form_resa">
         <fieldset id="infos_client">
             <legend>Vos informations</legend>
@@ -53,7 +62,7 @@
                 <option value="cinq">5</option>
                 <option value="six">6</option>
                 <option value="sept">7</option>
-                <option value="hui">8</option>
+                <option value="huit">8</option>
                 <option value="neuf">9</option>
                 <option value="dix">10</option>
             </select>
@@ -103,7 +112,7 @@
             <input type="button" value="Annuler" id="annuler" class="bouton_submit"/>
         </div>
     </form>
-</div>
+</section>
 <div class="modal_box_container">
     <div class="modal_box_background"></div>
     <div id="confirm_resa">

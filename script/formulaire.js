@@ -27,6 +27,7 @@ $(function () {
         buttonImage: 'images/calendar_icon.gif',
         numberOfMonths: 2,
         showButtonPanel: true,
+        dateFormat: "dd-mm-yy",
         minDate: min_date,
         maxDate: max_date
     });
@@ -133,18 +134,19 @@ function valider_formulaire(event) {
         champ_tel.next(".error_msg").remove();
     }
 
-    ///* VALIDER DATEPICKER */
-    //var champ_datepicker = $("#datepicker");
-    //    if (champ_datepicker.val().trim().length < MIN_NB_CAR) {
-    //        champ_datepicker.addClass("error");  // ajoute la classe error
-    //        if (!champ_datepicker.next().is(".error_msg")) {
-    //            champ_datepicker.after("<p class='error_msg'>Champ obligatoire</p>");  // ajoute un paragraphe de message apres l'element input
-    //        }
-    //        formulaire_valide = false;
-    //    } else {
-    //        champ_datepicker.removeClass("error");
-    //        champ_datepicker.next(".error_msg").remove();
-    //    }
+    /* VALIDER DATEPICKER */
+    var champ_datepicker = $("#datepicker");
+    var img_calendrier = $("#resa_client button");
+        if (champ_datepicker.val().trim().length < MIN_NB_CAR) {
+            champ_datepicker.addClass("error");  // ajoute la classe error
+            if (!champ_datepicker.next().is(".error_msg")) {
+                img_calendrier.after("<p class='error_msg'>Champ obligatoire</p>");  // ajoute un paragraphe de message apres l'element input
+            }
+            formulaire_valide = false;
+        } else {
+            champ_datepicker.removeClass("error");
+            img_calendrier.next(".error_msg").remove();
+        }
 
 
     // EN CONCLUSION : on soumet ou pas
